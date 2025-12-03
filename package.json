@@ -1,0 +1,27 @@
+{
+  "name": "goodscleaning",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@fontsource/poppins": "^5.2.7",
+    "@fontsource/roboto": "^5.2.9",
+    "pinia": "^3.0.4",
+    "swiper": "^12.0.3",
+    "vue": "^3.5.24",
+    "vue3-marquee": "^4.2.2"
+  },
+  "devDependencies": {
+    "@tailwindcss/typography": "^0.5.19",
+    "@tailwindcss/vite": "^4.1.17",
+    "@vitejs/plugin-vue": "^6.0.1",
+    "daisyui": "^5.5.5",
+    "tailwindcss": "^4.1.17",
+    "vite": "^7.2.4"
+  }
+}

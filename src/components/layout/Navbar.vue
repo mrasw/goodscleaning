@@ -1,9 +1,10 @@
 <script setup>
-import GoodsCleanig from '../../assets/images/GoodsCleanig.svg'
+import GoodsCleanig from '../../assets/images/GoodsCleaning.svg'
 
 import { useAppStore } from '../../../srcEx/stores/app';
 
 import { ref } from 'vue';
+import { Icon } from "@iconify/vue";
 
 const app = useAppStore()
 
@@ -29,29 +30,13 @@ const param = ref({
 </style>
 
 <template>
-    <!-- <div class="navbar shadow-sm bg-linear-to-r from-hijau-0 to-hijau-100 rounded-md px-3"> -->
     <div class="navbar shadow-sm dark:bg-linear-to-r dark:from-hijau-0 dark:to-hijau-100 not-dark:bg-hijau-text rounded-md px-3">
         <div class="navbar-start">
             <img :src="param.image" alt="">
-            <!-- <div class="avatar mr-1">
-                <div class="w-8 rounded-full ">
-                    <img :src="param.image" alt="">
-                </div>
-            </div>
-            <a class="text-md font-bold">Goods Cleaning</a> -->
         </div>
         <div class="navbar-center hidden lg:flex">
             <ul class="menu menu-horizontal px-1 font-poppins font-bold text-white">
                 <li><a>About Us</a></li>
-                <!-- <li>
-                <details>
-                    <summary>Parent</summary>
-                    <ul class="p-2 bg-base-100 w-40 z-1">
-                        <li><a>Submenu 1</a></li>
-                        <li><a>Submenu 2</a></li>
-                    </ul>
-                </details>
-            </li> -->
                 <li><a>Service</a></li>
                 <li><a>Testimoni</a></li>
             </ul>
@@ -72,24 +57,20 @@ const param = ref({
                         "
                 >
                     <li><a class="not-dark:text-gradient-hijau-100 dark:text-kuning-3">Contact Us</a></li>
-                    <!-- <li>
-                        <a>Parent</a>
-                        <ul class="p-2">
-                            <li><a>Submenu 1</a></li>
-                            <li><a>Submenu 2</a></li>
-                        </ul>
-                    </li>
-                    <li><a>Item 3</a></li> -->
                 </ul>
             </div>
             <div v-if="app.isDesktopDevice">
                 <div class="">
-                    <button class="btn bg-kuning border-none shadow-none text-hijau-text font-poppins font-bold">Contact Us</button>
+                    <a class="btn bg-kuning border-none shadow-none text-hijau-text font-poppins font-bold" href="https://wa.me/6285819423066" target="_blank">
+                        <Icon icon="ic:baseline-whatsapp" width="24" height="24" :style="{ color: '#02402C' }" />
+                        <span>
+                            Contact Us
+                        </span>
+                    </a>
                 </div>
             </div>
         </div>
-        <!-- <div class="navbar-end">
-            <a class="btn">Button</a>
-        </div> -->
     </div>
+
+    
 </template>

@@ -87,8 +87,8 @@ const services = ref([
                                         alt="Shoes" class="rounded-xl" />
                                 </figure> -->
                             <div class="bg-gray-300 h-30 rounded-2xl"></div>
-                            <div class="card-body px-0">
-                                <h2 class="card-title">{{ service.name }}</h2>
+                            <div class="card-body px-0 text-center">
+                                <h2 class="card-title mx-auto bg-kuning-3 px-2">{{ service.name }}</h2>
                                 <p>{{ service.desc }}</p>
                             </div>
                         </div>

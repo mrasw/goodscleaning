@@ -6,7 +6,7 @@ import Services from './body/Services.vue'
 import Testimonials from './body/Testimonials.vue'
 import JoinOurTeam from './body/JoinOurTeam.vue'
 import Footer from './body/Footer.vue';
-
+import PartnerWithUs from './body/PartnerWithUs.vue';
 
 
 const props = defineProps({
@@ -31,6 +31,8 @@ const props = defineProps({
             <Services :app="props.app"/>
 
             <Testimonials :app="props.app"/>
+            
+            <PartnerWithUs :app="props.app"/>
 
             <JoinOurTeam :app="props.app"/>
 

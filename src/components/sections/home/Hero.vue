@@ -119,10 +119,10 @@
                 <div class="grid place-items-center mb-3">
                     <div class="">
                         <!-- Container dengan overflow hidden -->
-                        <div class="overflow-hidden">
+                        <div class="overflow-hidden w-full">
                             <!--line negative margin -->
                             <div
-                                class="text-6xl not-dark:text-gradient-hijau-100 dark:text-kuning-3 dark:text-shadow-3d-left font-poppins-900 tracking-tighter my-3 mx-3"
+                                class="text-[clamp(3rem,15vw,5rem)] not-dark:text-gradient-hijau-100 dark:text-kuning-3 dark:text-shadow-3d-left font-poppins-900 tracking-tighter my-3 mx-3"
                             >
                                 <div>
                                     <div class="block leading-[0.8]">GOODS</div>
@@ -132,7 +132,7 @@
                         </div>
 
                         <!-- hashtag -->
-                        <div class="text-end ">
+                        <div class="text-end w-full">
                             <span 
                                 class="text-kuning-2 text-xs block font-poppins-700"
                             >

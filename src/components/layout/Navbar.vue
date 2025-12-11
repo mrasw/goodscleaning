@@ -11,6 +11,10 @@ const app = useAppStore()
 const param = ref({
     image: GoodsCleanig
 })
+
+const props = defineProps({
+    path: String,
+})
 </script>
 
 <style scoped>
@@ -30,15 +34,18 @@ const param = ref({
 </style>
 
 <template>
-    <div class="navbar shadow-sm dark:bg-linear-to-r dark:from-hijau-0 dark:to-hijau-100 not-dark:bg-hijau-text rounded-md px-3">
+    <div class="navbar px-3"
+        :class="[(props.path == '/')?'dark:bg-linear-to-r dark:from-hijau-0 dark:to-hijau-100 not-dark:bg-hijau-text rounded-md shadow-sm':'bg-hijau-text rounded-t-md']"
+    >
         <div class="navbar-start">
             <img :src="param.image" alt="">
         </div>
         <div class="navbar-center hidden lg:flex">
             <ul class="menu menu-horizontal px-1 font-poppins font-bold text-white">
-                <li><a>About Us</a></li>
-                <li><a>Service</a></li>
-                <li><a>Testimoni</a></li>
+                <li><a href="/" :class="[(props.path == '/')?'underline underline-offset-8 decoration-kuning-3':'']">Home</a></li>
+                <li><a href="/aboutus" :class="[(props.path == '/aboutus')?'underline underline-offset-8 decoration-kuning-3':'']">About Us</a></li>
+                <li><a :class="[(props.path == '/services')?'underline underline-offset-8 decoration-kuning-3':'']">Services</a></li>
+                <li><a :class="[(props.path == '/partnership')?'underline underline-offset-8 decoration-kuning-3':'']">Partnership</a></li>
             </ul>
         </div>
         <div class="navbar-end">

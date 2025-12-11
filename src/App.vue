@@ -1,19 +1,27 @@
 <script setup>
   import HelloWorld from './components/HelloWorld.vue'
   import Home from './views/Home.vue';
+  import Navbar from './components/layout/Navbar.vue';
+  
+  import { useAppStore } from '../srcEx/stores/app';
+
+  const app = useAppStore();
+
+  import { ref, watch, computed,watchEffect } from 'vue';
+  import { useRoute } from 'vue-router';
+
+  
+  const route = useRoute()
+  watchEffect(() => console.log(route, route.path))
 </script>
 
 <template>
-  <!-- <div>
-    <a href="https://vite.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
-  </div>
-  <HelloWorld msg="Vite + Vue" /> -->
-  <Home />
+  <!-- <Home /> -->
+    <div class="" :class="app.isDesktopDevice ? 'px-8 py-5' : 'px-4 py-2'">
+        <Navbar :path="route.path"/>
+        
+        <router-view/>
+    </div>
 </template>
 
 <style scoped>

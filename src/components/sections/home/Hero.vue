@@ -158,7 +158,7 @@
                 <Swiper 
                     :modules="[Navigation, Pagination, A11y, Autoplay]" 
                     :autoplay="{
-                        delay: 2000,     // ganti sesuai interval
+                        delay: 2000,     
                         disableOnInteraction: false
                     }" 
                     :loop="true" 

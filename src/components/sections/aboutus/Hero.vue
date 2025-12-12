@@ -21,7 +21,7 @@ const props = defineProps({
     <!-- hero -->
     <section>
         <div 
-            :class="['pt-13 px-28']"
+            :class="['px-28']"
         >
             <div :class="[props.app.isDesktopDevice?'space-y-14':'']">
                 <div class="text-center space-y-8">

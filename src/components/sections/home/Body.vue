@@ -5,7 +5,8 @@ import WhyChooseUs from './body/WhyChooseUs.vue'
 import Services from './body/Services.vue'
 import Testimonials from './body/Testimonials.vue'
 import JoinOurTeam from './body/JoinOurTeam.vue'
-import Footer from './body/Footer.vue';
+// import Footer from '../../layout/Footer.vue';
+import Footer from '../../layout/Footer.vue';
 import PartnerWithUs from './body/PartnerWithUs.vue';
 
 

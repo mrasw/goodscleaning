@@ -2,6 +2,8 @@
   import HelloWorld from './components/HelloWorld.vue'
   import Home from './views/Home.vue';
   import Navbar from './components/layout/Navbar.vue';
+
+  import Footer from './components/layout/Footer.vue';
   
   import { useAppStore } from '../srcEx/stores/app';
 
@@ -21,6 +23,8 @@
         <Navbar :path="route.path"/>
         
         <router-view/>
+
+        <!-- <Footer :app="app" :class="[app.isDesktopDevice?'mt-30':'mt-14']"/> -->
     </div>
 </template>
 

@@ -1,3 +1,43 @@
+@font-face {
+  font-family: Futura;
+  font-style: normal;
+  font-display: swap;
+  font-weight: 300;
+  src: url(./assets/fonts/futura/Futura-Light.otf) format('otf')
+}
+
+@font-face {
+  font-family: Futura;
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: url(./assets/fonts/futura/Futura-Regular.ttf) format('truetype')
+}
+
+@font-face {
+  font-family: Futura;
+  font-style: normal;
+  font-display: swap;
+  font-weight: 500;
+  src: url(./assets/fonts/futura/Futura-Medium.otf) format('otf')
+}
+
+@font-face {
+  font-family: Futura;
+  font-style: normal;
+  font-display: swap;
+  font-weight: 700;
+  src: url(./assets/fonts/futura/Futura-Bold.otf) format('otf')
+}
+
+@font-face {
+  font-family: Futura;
+  font-style: normal;
+  font-display: swap;
+  font-weight: 900;
+  src: url(./assets/fonts/futura/Futura-Black.ttf) format('ttf')
+}
+
 @import "tailwindcss";
 
 @theme{
@@ -32,6 +72,7 @@
 }
 
 /* style.css */
+/* poppins */
 @utility font-poppins-300 {
   font-family: 'Poppins', sans-serif;
   font-weight: 300;
@@ -60,6 +101,33 @@
   font-family: 'Poppins', sans-serif;
   font-weight: 900;
 }
+
+/* futura */
+@utility font-futura-300 {
+  font-family: 'Futura', sans-serif;
+  font-weight: 300;
+}
+
+@utility font-futura {
+  font-family: 'Futura', sans-serif;
+  font-weight: 400;
+}
+
+@utility font-futura-500 {
+  font-family: 'Futura', sans-serif;
+  font-weight: 500;
+}
+
+@utility font-futura-700 {
+  font-family: 'Futura', sans-serif;
+  font-weight: 700;
+}
+
+@utility font-futura-900 {
+  font-family: 'Futura', sans-serif;
+  font-weight: 900;
+}
+
 
 @utility text-shadow-3d-left {
   text-shadow: 

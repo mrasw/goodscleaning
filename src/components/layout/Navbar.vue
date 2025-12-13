@@ -17,21 +17,6 @@ const props = defineProps({
 })
 </script>
 
-<style scoped>
-.font-poppins {
-    font-family: Poppins, sans-serif;
-}
-
-.font-poppins-700 {
-    font-family: Poppins, sans-serif;
-    font-weight: 700;
-}
-
-.font-poppins-900 {
-    font-family: Poppins, sans-serif;
-    font-weight: 900;
-}
-</style>
 
 <template>
     <div class="navbar px-3"

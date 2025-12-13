@@ -25,7 +25,7 @@ const props = defineProps({
         >
             <div :class="[props.app.isDesktopDevice?'space-y-14':'']">
                 <div class="text-center space-y-8">
-                    <div class="text-6xl w-2/3 mx-auto">Cleaning Your Shoes with Care and Compassion</div>
+                    <div class="text-6xl w-2/3 mx-auto font-poppins-700">Cleaning Your Shoes with Care and Compassion</div>
                     <div class="w-3/4 mx-auto">Tim kami berdedikasi untuk memberikan sepatu yang bersih, terawat, dan nyaman dipakai, dengan menggunakan produk terbaik serta teknik pembersihan yang teruji.</div>
                 </div>
                 <div>

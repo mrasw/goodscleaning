@@ -61,7 +61,7 @@ const layanan = ref([
                             <img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
                                 alt="Shoes" class="rounded-xl" />
                         </figure> -->
-                    <div class="bg-gray-300 h-0 rounded-2xl"></div>
+                    <div class="bg-gray-300 h-60 rounded-2xl"></div>
                     <div class="card-body px-0 text-center">
                         <h2 class="card-title mx-auto bg-kuning-3 px-2">{{ l.layanan }}</h2>
                         <p>{{ l.desc }}</p>

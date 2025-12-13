@@ -1,6 +1,8 @@
 <script setup>
 import { ref, onMounted, computed } from 'vue';
 
+import { Icon } from "@iconify/vue";
+
 const props = defineProps({
     app: Object,
 })
@@ -27,11 +29,11 @@ const location = ref([
 
 <template>
     <section>
-        <div class="text-hijau-text mx-17">
+        <div class="text-hijau-text mx-17 font-poppins-700">
             <div class="text-center">
                 <span class="text-5xl">Our Location</span>
             </div>
-            <div class="grid gap-6"
+            <div class="grid gap-6 mt-10"
                 :class="[props.app.isDesktopDevice ? 'grid-cols-2' : 'grid-flow-row']">
                 <div class="card bg-kuning-3 w-full shadow-sm" v-for="loc in location">
                     <figure class="px-10 pt-10">
@@ -40,9 +42,18 @@ const location = ref([
                     </figure>
                     <div class="card-body ">
                         <h2 class="card-title">{{ loc.name }}</h2>
-                        <p>{{loc.detail}}</p>
-                        <p>{{loc.jadwal}}</p>
-                        <p>{{loc.telp}}</p>
+                        <div class="flex gap-4">
+                            <Icon icon="mdi:location" width="16" height="16" class="text-hijau-text shrink-0" />
+                            <p>{{loc.detail}}</p>
+                        </div>
+                        <div class="flex gap-4 items-center">
+                            <Icon icon="lsicon:time-one-filled" width="16" height="16" class="text-hijau-text shrink-0"/>
+                            <p>{{loc.jadwal}}</p>
+                        </div>
+                        <div class="flex gap-4 items-center">
+                            <Icon icon="mage:whatsapp-filled" width="16" height="16" class="text-hijau-text shrink-0" />
+                            <p>{{loc.telp}}</p>
+                        </div>
                     </div>
                 </div>
             </div>

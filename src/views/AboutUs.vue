@@ -13,9 +13,9 @@
 
 <template>
     <div class="w-full bg-white grid gap-20
-        [background-image:linear-gradient(to_bottom,#02402C,#05A672)]
-        [background-size:100%_528px]
-        [background-repeat:no-repeat]"
+        bg-[linear-gradient(to_bottom,#02402C,#05A672)]
+        bg-size-[100%_528px]
+        bg-no-repeat"
         :class="['pt-13']"
     >
         <Hero :app="app"/>

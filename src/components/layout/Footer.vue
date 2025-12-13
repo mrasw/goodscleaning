@@ -11,7 +11,7 @@ const props = defineProps({
 
     <!-- footer -->
     <section>
-        <footer class="footer sm:footer-horizontal bg-hijau-text rounded-b-md text-base-content text-white"
+        <footer class="footer sm:footer-horizontal bg-hijau-text rounded-b-md text-base-content"
             :class="[props.app.isDesktopDevice ? 'px-16 py-21' : 'px-3 py-4']">
             <div class="" :class="[props.app.isDesktopDevice ? 'flex flex-row gap-9' : 'grid']">
                 <div class="basis-5/12">

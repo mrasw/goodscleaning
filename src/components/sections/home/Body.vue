@@ -3,7 +3,7 @@ import { ref, watch, computed, onMounted, onUnmounted } from 'vue';
 import AboutUs from './body/AboutUs.vue'
 import WhyChooseUs from './body/WhyChooseUs.vue'
 import Services from './body/Services.vue'
-import Testimonials from './body/Testimonials.vue'
+import Testimonials from '../../layout/Testimonials.vue'
 import JoinOurTeam from './body/JoinOurTeam.vue'
 // import Footer from '../../layout/Footer.vue';
 import Footer from '../../layout/Footer.vue';

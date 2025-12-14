@@ -143,7 +143,7 @@ const services = ref([
                         </div>
                     </div>
                     <div>
-                        <div class="max-w-3xl mx-auto">
+                        <div class="max-w-3xl mx-auto h-full">
                             <figure class="diff aspect-8/9 rounded-3xl h-full" tabindex="0">
                                 <div class="diff-item-1" role="img" tabindex="0">
                                     <img alt="daisy" :src="[before2]" />

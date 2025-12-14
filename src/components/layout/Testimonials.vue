@@ -1,6 +1,6 @@
 <script setup>
 import { ref, onMounted, computed, onUnmounted, watch, nextTick } from 'vue';
-import { useHomeData } from '../../../../composeables/useHomeData';
+import { useHomeData } from '../../composeables/useHomeData';
 
 const props = defineProps({
     app: Object,
@@ -69,6 +69,7 @@ onMounted(async () => {
 
     // Load reviews
     await loadReviews();
+    console.log('✅ Reviews loaded:', reviews?.value);
     console.log('✅ Reviews loaded:', reviews.value?.length || 0);
 
     // Tunggu DOM render
@@ -154,9 +155,9 @@ watch(() => props.app.width, () => {
                         <div v-for="(review, index) in group" :key="index" class="card px-4 py-6 text-hijau-text">
                             <div class="size-20 rounded-full mb-2 overflow-hidden">
                                 <img :src="review.authorAttribution?.photoUri || ''"
-                                    :alt="review.authorAttribution?.name || 'User'" class="w-full h-full object-cover">
+                                    :alt="review.authorAttribution?.displayName || 'User'" class="w-full h-full object-cover">
                             </div>
-                            <h1 class="font-bold">{{ review.authorAttribution?.name || 'Anonymous' }}</h1>
+                            <h1 class="font-bold">{{ review.authorAttribution?.displayName || 'Anonymous' }}</h1>
 
                             <!-- Rating Stars -->
                             <div class="rating rating-xs">

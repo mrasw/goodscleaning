@@ -27,8 +27,10 @@ const layanan = ref([
 </script>
 <template>
     <section>
-        <div :class="['px-17']">
-            <div class="flex justify-between text-hijau-text">
+        <div class="" :class="[props.app.isDesktopDevice?'px-17':'px-5']">
+            <div class="flex text-hijau-text"
+                :class="[props.app.isDesktopDevice?'flex-row justify-between':'flex-col space-y-4']"
+            >
                 
                 <!-- LEFT -->
                 <div class="basis-3/5">
@@ -45,17 +47,28 @@ const layanan = ref([
                         <h2 class=" font-poppins-600 text-hijau-text leading-tight "
                         :class="[props.app.isDesktopDevice?'text-5xl':'text-[32px]']"
                         >
-                            Why Thousands Trust Goods Cleaning
+                            <span v-if="props.app.isDesktopDevice">
+                                Why Thousands Trust Goods Cleaning
+                            </span>
+                            <span v-if="props.app.isMobileDevice">
+                                Why Thousands Trust Us for Spotless Clean
+                            </span>
                         </h2>
                     </div>
                 </div>
-                <div class="space-y-4 basis-2/5">
-                    <p class="font-bold">Didirikan pada tahun 2022, Goods Cleaning hadir sebagai brand jasa perawatan dan pencucian sepatu profesional yang berfokus pada kualitas, kecepatan, dan kenyamanan pelanggan.</p>
-                    <p>— Komitmen kami memberikan layanan shoe care modern yang memadukan teknologi pembersihan berbasis steam, standar kebersihan tinggi, serta sistem layanan antar jemput gratis agar pelanggan dapat menikmati kemudahan.</p>
+                <div class="basis-2/5">
+                    <span class="space-y-4" v-if="props.app.isDesktopDevice">
+                        <p class="font-bold">Didirikan pada tahun 2022, Goods Cleaning hadir sebagai brand jasa perawatan dan pencucian sepatu profesional yang berfokus pada kualitas, kecepatan, dan kenyamanan pelanggan.</p>
+                        <p>— Komitmen kami memberikan layanan shoe care modern yang memadukan teknologi pembersihan berbasis steam, standar kebersihan tinggi, serta sistem layanan antar jemput gratis agar pelanggan dapat menikmati kemudahan.</p>
+                    </span>
+                    <span class="space-y-2" v-if="props.app.isMobileDevice">
+                        <p class="font-bold">Ubah Penampilan Sepatu Anda dengan Layanan Pembersihan Terpercaya & Ramah Lingkungan Biarkan kami merawat sepatu Anda agar kembali bersih, rapi, dan nyaman dipakai.</p>
+                        <p>— Komitmen kami hanya menggunakan produk berkualitas serta aman untuk menjaga sepatu tetap awet sekaligus memberikan kenyamanan maksimal bagi Anda. Setiap layanan dirancang untuk menghadirkan hasil terbaik dengan cepat dan terjangkau.</p>
+                    </span>
                 </div>
             </div>
-            <div class="grid mt-20 gap-6 text-hijau-text"
-                :class="[props.app.isDesktopDevice ? 'grid-cols-[repeat(auto-fit,minmax(390px,1fr))]' : 'grid-flow-row']">
+            <div class="grid gap-6 text-hijau-text"
+                :class="[props.app.isDesktopDevice ? 'grid-cols-[repeat(auto-fit,minmax(390px,1fr))]  mt-20' : 'grid-flow-row mt-12']">
                 <div class="card w-full" v-for="l in layanan">
                     <!-- <figure class="">
                             <img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"

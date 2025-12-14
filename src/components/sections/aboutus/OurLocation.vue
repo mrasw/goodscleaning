@@ -29,14 +29,16 @@ const location = ref([
 
 <template>
     <section>
-        <div class="text-hijau-text mx-17 font-poppins-700">
+        <div class="text-hijau-text font-poppins-700"
+        :class="[props.app.isDesktopDevice?' mx-17':'mx-5']"
+        >
             <div class="text-center">
                 <span class="text-5xl">Our Location</span>
             </div>
             <div class="grid gap-6 mt-10"
                 :class="[props.app.isDesktopDevice ? 'grid-cols-2' : 'grid-flow-row']">
-                <div class="card bg-kuning-3 w-full shadow-sm" v-for="loc in location">
-                    <figure class="px-10 pt-10">
+                <div class="card bg-kuning-3 px-6 w-full shadow-sm" v-for="loc in location">
+                    <figure class="pt-10">
                         <img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
                             alt="Shoes" class="rounded-xl" />
                     </figure>

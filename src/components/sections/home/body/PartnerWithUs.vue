@@ -48,11 +48,11 @@ console.log('oi')
                     </div>
                 </div>
                 <div class="flex flex-col "
-                :class="[props.isDesktopDevice?' h-[584px] gap-4':'h-[355px] gap-3']"
+                :class="[props.app.isDesktopDevice?' h-[584px] gap-4':'h-[355px] gap-3']"
                 >
                     <!-- Top component dengan width 100% -->
                     <div class="bg-gray-200 grow w-full"
-                    :class="[props.isDesktopDevice?' rounded-3xl':' rounded-2xl']"
+                    :class="[props.app.isDesktopDevice?' rounded-3xl':' rounded-2xl']"
                     ></div>
                     
                     <!-- Bottom container dengan width sama -->

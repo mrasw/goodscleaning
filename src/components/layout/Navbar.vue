@@ -30,7 +30,7 @@ const props = defineProps({
                 <li><a href="/" :class="[(props.path == '/')?'underline underline-offset-8 decoration-kuning-3':'']">Home</a></li>
                 <li><a href="/aboutus" :class="[(props.path == '/aboutus')?'underline underline-offset-8 decoration-kuning-3':'']">About Us</a></li>
                 <li><a href="/services" :class="[(props.path == '/services')?'underline underline-offset-8 decoration-kuning-3':'']">Services</a></li>
-                <li><a :class="[(props.path == '/partnership')?'underline underline-offset-8 decoration-kuning-3':'']">Partnership</a></li>
+                <li><a href="/partnership" :class="[(props.path == '/partnership')?'underline underline-offset-8 decoration-kuning-3':'']">Partnership</a></li>
             </ul>
         </div>
         <div class="navbar-end">

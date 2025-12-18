@@ -48,7 +48,7 @@ const props = defineProps({
                             <nav class="space-y-2">
                                 <div>
                                     <article class="prose">
-                                        <h4 class="">Company</h4>
+                                        <h4 class="text-white">Company</h4>
                                     </article>
                                 </div>
                                 <div>
@@ -103,7 +103,7 @@ const props = defineProps({
                     <div>
                         <nav class="space-y-2">
                             <article class="prose">
-                                <h4 class="">Locations</h4>
+                                <h4 class="text-white">Locations</h4>
                             </article>
                             <div class="grid space-y-5">
                                 <div class="inline-block">
@@ -129,7 +129,7 @@ const props = defineProps({
                                     <div class="flex items-start gap-3">
                                         <Icon icon="mdi:location" width="24" height="24" class="text-kuning-2 shrink-0" />
                                         <div>
-                                            <h6 class="font-semibold">Bojong Gede</h6>
+                                            <h6 class="font-semibold">Depok</h6>
                                             <span class="text-sm">Jl. Al-Barkah No.4, Sawangan, Depok</span>
                                         </div>
                                     </div>

@@ -10,11 +10,12 @@ const { reviews, loadReviews } = useHomeData()
 
 const containerRef = ref(null);
 const itemsPerSlide = ref(1);
+const server = import.meta.env.VITE_BACKEND_SERVER
 
 // Function untuk compute items per slide
 const computeItemsPerSlide = () => {
     const width = containerRef.value?.clientWidth || window.innerWidth;
-    console.log('📏 Compute width:', width, 'container width:', containerRef.value?.clientWidth);
+    console.log(' Compute width:', width, 'container width:', containerRef.value?.clientWidth);
 
     if (width >= 1024) {
         itemsPerSlide.value = 4;   // Desktop
@@ -26,7 +27,7 @@ const computeItemsPerSlide = () => {
         itemsPerSlide.value = 1; // Small phone
     }
 
-    console.log('🎯 Items per slide:', itemsPerSlide.value);
+    console.log(' Items per slide:', itemsPerSlide.value);
 };
 
 // Function untuk chunk array
@@ -39,13 +40,13 @@ const chunk = (arr, size) => {
 
 // Computed untuk slides
 const slides = computed(() => {
-    console.log('🔄 Computing slides...', {
+    console.log(' Computing slides...', {
         reviewsCount: reviews.value?.length || 0,
         itemsPerSlide: itemsPerSlide.value
     });
 
     const result = chunk(reviews.value, itemsPerSlide.value);
-    console.log('📊 Slides result:', result.length, 'slides');
+    console.log(' Slides result:', result.length, 'slides');
     return result;
 });
 
@@ -65,12 +66,14 @@ const onScroll = (e) => {
 
 // Load reviews dan setup
 onMounted(async () => {
-    console.log('🚀 Component mounted');
+    console.log(' Component mounted');
 
     // Load reviews
     await loadReviews();
-    console.log('✅ Reviews loaded:', reviews?.value);
-    console.log('✅ Reviews loaded:', reviews.value?.length || 0);
+    console.log(' Reviews loaded:', reviews?.value);
+    console.log(' Reviews loaded:', reviews.value?.length || 0);
+    console.log(' Name loaded:', reviews.value[0]?.authorAttribution?.displayName || 0);
+    console.log(' Photo loaded:', reviews.value[0]?.authorAttribution?.photoUri || 0);
 
     // Tunggu DOM render
     await nextTick();
@@ -82,7 +85,7 @@ onMounted(async () => {
     window.addEventListener("resize", computeItemsPerSlide);
 
     // Debug info
-    console.log('🎯 Final state:', {
+    console.log(' Final state:', {
         containerWidth: containerRef.value?.clientWidth,
         itemsPerSlide: itemsPerSlide.value,
         slidesCount: slides.value.length
@@ -96,7 +99,7 @@ onUnmounted(() => {
 // Watch untuk reviews changes
 watch(reviews, (newReviews) => {
     if (newReviews && newReviews.length > 0) {
-        console.log('🔄 Reviews updated, recomputing...');
+        console.log(' Reviews updated, recomputing...');
         nextTick(() => {
             computeItemsPerSlide();
         });
@@ -153,8 +156,11 @@ watch(() => props.app.width, () => {
                     }">
 
                         <div v-for="(review, index) in group" :key="index" class="card px-4 py-6 text-hijau-text">
+                            <!-- <p>{{ review.authorAttribution?.photoUri  }}</p> -->
                             <div class="size-20 rounded-full mb-2 overflow-hidden">
-                                <img :src="review.authorAttribution?.photoUri || ''"
+                                <!-- <img :src="review.authorAttribution?.photoUri || ''"
+                                    :alt="review.authorAttribution?.displayName || 'User'" class="w-full h-full object-cover"> -->
+                                <img :src="`http://${server}/api/google-photo?url=${encodeURIComponent(review.authorAttribution.photoUri)}` || ''"
                                     :alt="review.authorAttribution?.displayName || 'User'" class="w-full h-full object-cover">
                             </div>
                             <h1 class="font-bold">{{ review.authorAttribution?.displayName || 'Anonymous' }}</h1>

@@ -28,7 +28,7 @@ app.get("/api/google-reviews", async (req, res) => {
         const response = await axios.get(url, {
             headers: {
                 "X-Goog-Api-Key": process.env.GOOGLE_API_KEY,
-                "X-Goog-FieldMask": "reviews,rating,userRatingCount"
+                "X-Goog-FieldMask": "reviews,rating,userRatingCount,photos"
             }
         })
 
@@ -40,6 +40,21 @@ app.get("/api/google-reviews", async (req, res) => {
         res.status(500).json({ error: "Failed fetching Google Reviews" })
     }
 })
+
+app.get("/api/google-photo", async (req, res) => {
+    try {
+        const photoUrl = req.query.url
+        const response = await axios.get(photoUrl, {
+            responseType: "arraybuffer"
+        })
+
+        res.set("Content-Type", response.headers["content-type"])
+        res.send(response.data)
+    } catch (err) {
+        res.status(500).send("Image fetch failed")
+    }
+})
+
 
 const PORT = process.env.PORT || 3001
 app.listen(PORT, () => console.log("Backend Server running on port", PORT))

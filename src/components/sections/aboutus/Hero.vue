@@ -27,7 +27,7 @@ const props = defineProps({
                 bg-no-repeat"
             :class="[props.app.isDesktopDevice?'px-28 pt-13':'px-3 pt-8']"
         >
-            <div :class="[props.app.isDesktopDevice?'space-y-14':'space-y-8']">
+            <div class="text-white" :class="[props.app.isDesktopDevice?'space-y-14':'space-y-8']">
                 <div class="text-center"
                 :class="[props.app.isDesktopDevice?'space-y-8':'space-y-3']"
                 >

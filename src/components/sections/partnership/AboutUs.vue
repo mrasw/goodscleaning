@@ -37,7 +37,7 @@ const layanan = ref([
                     <div>
                         <span
                             class="font-poppins text-base text-hijau-text underline underline-offset-8 decoration-hijau-decoration">
-                            PARTNER WITH US
+                            BERMITRA BERSAMA GOODS CLEANING
                         </span>
                     </div>
 
@@ -48,7 +48,7 @@ const layanan = ref([
                         :class="[props.app.isDesktopDevice?'text-5xl':'text-[32px]']"
                         >
                             <span>
-                                Grow Your Own Goods Cleaning Branch
+                                Kembangkan Cabang Goods Cleaning Anda
                             </span>
                         </h2>
                     </div>

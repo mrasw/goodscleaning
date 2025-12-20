@@ -31,7 +31,7 @@ const props = defineProps({
                 <div class="text-center"
                 :class="[props.app.isDesktopDevice?'space-y-8':'space-y-3']"
                 >
-                    <div class="text-6xl w-2/3 mx-auto font-poppins-700" v-if="props.app.isDesktopDevice">Cleaning Your Shoes with Care and Compassion</div>
+                    <div class="text-6xl w-2/3 mx-auto font-poppins-700" v-if="props.app.isDesktopDevice">Bawa Kebersihan Sepatu Anda ke Level Baru</div>
                     <div class="w-3/4 mx-auto font-poppins" v-if="props.app.isDesktopDevice">Tim kami berdedikasi untuk memberikan sepatu yang bersih, terawat, dan nyaman dipakai, dengan menggunakan produk terbaik serta teknik pembersihan yang teruji.</div>
                     <div class="text-2xl w-5/6 mx-auto font-poppins-700" v-if="props.app.isMobileDevice">Bringing Clean, Comfort, and Care Together</div>
                     <div class="w-8/9 mx-auto text-base font-poppins" v-if="props.app.isMobileDevice">Tim kami berdedikasi untuk memberikan sepatu yang bersih, terawat, dan nyaman dipakai, dengan menggunakan produk terbaik serta teknik pembersihan yang teruji.</div>

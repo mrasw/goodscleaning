@@ -87,7 +87,7 @@ console.log('oi')
                                 <div>
                                     <span class="font-poppins-600 text-white"
                                         :class="[props.app.isDesktopDevice ? 'text-4xl' : 'text-3xl']">
-                                        Partner With Us — Grow Your Business with Goods Cleaning
+                                        Berpartnerlah Bersama Kami — Kembangkan Bisnis Anda bersama Goods Cleaning
                                     </span>
                                 </div>
                                 <div class="">

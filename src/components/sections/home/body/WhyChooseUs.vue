@@ -30,7 +30,7 @@ const features = ref([
     <section class="">
         <div class="container mx-auto px-4 md:px-8">
             <div class="grid  items-center"
-                :class="[props.app.isDesktopDevice?'grid-cols-2 gap-34':'gap-6']"
+                :class="[props.app.isDesktopDevice?'grid-cols-2 gap-34':'gap-10']"
             >
                 <div class="relative w-full mx-auto flex justify-center" :class="[props.app.isDesktopDevice ? '' : 'max-w-3xs order-2']">
 
@@ -78,7 +78,7 @@ const features = ref([
 
                             <div class="">
                                 <ul class="grid grid-cols-1 sm:grid-cols-2 font-poppins-500"
-                                :class="[props.app.isDesktopDevice?'gap-4 mt-6':'gap-2']"
+                                :class="[props.app.isDesktopDevice?'gap-4 mt-6':'gap-2 mt-4']"
                                 >
                                     <li v-for="(item, index) in features" :key="index" class="flex items-center gap-3">
                                         <Icon :icon="item.icon" width="16" height="16"  class="text-hijau-text"/>

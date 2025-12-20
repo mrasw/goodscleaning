@@ -44,6 +44,10 @@ const services = ref([
         'harga': '35000',
     },
 ])
+
+const numberWithDots = (x) => {
+    return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+}
 </script>
 <template>
     <section>
@@ -83,7 +87,7 @@ const services = ref([
                                 <Icon icon="lsicon:time-one-filled" width="16" height="16" class="text-hijau-text shrink-0"/>
                                 {{service.waktu}} Hari
                             </div>
-                            <div class="text-xl">Rp. {{ service.harga }}</div>
+                            <div class="text-xl">Rp.{{ numberWithDots(service.harga) }}</div>
                         </div>
                     </div>
                 </div>

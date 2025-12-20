@@ -19,7 +19,7 @@ console.log('oi')
                         <div>
                             <span
                                 class="font-poppins text-base text-hijau-text underline underline-offset-8 decoration-hijau-decoration">
-                            PARTNER WITH US
+                            BERMITRA BERSAMA GOODS CLEANING
                             </span>
                         </div>
                         <div class="grid gap-8">
@@ -27,22 +27,22 @@ console.log('oi')
                                 <span class="font-poppins-600 text-hijau-text"
                                 :class="[props.app.isDesktopDevice?'text-5xl':'text-3xl']"
                                 >
-                                    Grow Your Own Goods Cleaning Branch
+                                    Bermitra Bersama Goods Cleaning
                                 </span>
                             </div>
                             <div class="grid gap-5">
                                 <p class="text-base font-poppins-300 text-hijau-text">
-                                    Ingin membuka cabang Goods Cleaning di kota Anda? Kami membuka kesempatan kemitraan bagi Anda yang ingin bergabung dan mengembangkan bisnis pembersihan sepatu profesional. Dapatkan dukungan operasional, pelatihan, dan sistem kerja yang telah terbukti.
+                                    Goods Cleaning membuka peluang bagi Anda untuk bergabung dan menjadi bagian dari ekosistem kami dalam menghadirkan upgrade pencucian sepatu kualitas lebih eksklusif, proses lebih modern, namun tetap hemat bagi pelanggan.
                                 </p>
                                 <p class="text-base font-poppins-300 text-hijau-text">
-                                    Hubungi kami sekarang dan jadilah bagian dari jaringan Goods Cleaning!
+                                    Didukung sistem yang telah teruji, metode perawatan profesional, serta pelatihan dan dukungan operasional, kami membantu Anda memberikan layanan pencucian sepatu yang bernilai lebih dan dipercaya.
                                 </p>
                             </div>
                         </div>
                         <div class="">
                             <a href="#" target="_blank"
                                 class="btn dark:text-kuning dark:bg-hijau-text bg-kuning text-hijau-text border-none shadow-none font-poppins font-bold">
-                                Join as Partner
+                                Bermitra Goods Cleaing
                             </a>
                         </div>
                     </div>

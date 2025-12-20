@@ -133,6 +133,10 @@
   color: transparent;
 }
 
+@utility collapse{
+  border-radius: 0
+}
+
 /* style.css */
 /* poppins */
 @utility font-poppins-300 {

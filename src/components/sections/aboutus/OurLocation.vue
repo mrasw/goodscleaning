@@ -33,7 +33,7 @@ const location = ref([
         :class="[props.app.isDesktopDevice?' mx-17':'mx-5']"
         >
             <div class="text-center">
-                <span class="text-5xl">Our Location</span>
+                <span class="text-5xl">Lokasi Kami</span>
             </div>
             <div class="grid gap-6 mt-10"
                 :class="[props.app.isDesktopDevice ? 'grid-cols-2' : 'grid-flow-row']">

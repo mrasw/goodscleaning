@@ -38,6 +38,11 @@ const navbarItems = ref([
 console.log(navbarItems)
 </script>
 
+<style>
+
+
+</style>
+
 <template>
     <div class="navbar px-3" v-if="app.isDesktopDevice"
         :class="[(props.path == '/') ? 'dark:bg-linear-to-r dark:from-hijau-0 dark:to-hijau-100 not-dark:bg-hijau-text rounded-md shadow-sm' : 'bg-hijau-text rounded-t-md']">
@@ -103,14 +108,14 @@ console.log(navbarItems)
                     </div>
                 </div>
             </summary>
-            <div class="collapse-content text-sm font-poppins grid gap-3">
+            <div class="collapse-content text-sm font-poppins grid">
                 
                 <div v-for="item in navbarItems" >
-                    <a class="w-full" :href="item.path"
+                    <a class="btn btn-ghost text-left block w-full " :href="item.path"
                     :class="[(props.path == item.path) ? 'underline underline-offset-8 decoration-kuning-3' : '']">{{ item.title }}</a>
                 </div>
                 
-                <div class="">
+                <div class="mt-3">
                     <a class="btn bg-kuning border-none shadow-none text-hijau-text font-poppins font-bold  w-full"
                         href="https://wa.me/6285819423066" target="_blank">
                         <Icon icon="ic:baseline-whatsapp" width="24" height="24" :style="{ color: '#02402C' }" />

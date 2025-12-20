@@ -105,7 +105,7 @@ const services = ref([
             >
                 <div class="text-center">
                     <span class="text-5xl font-poppins-600 text-hijau-text" v-if="props.app.isDesktopDevice">
-                        See the GoodsCleaning Difference
+                        Hasil Pencucian Kami
                     </span>
                     <span class="text-[32px] font-poppins-600 text-hijau-text" v-else-if="props.app.isMobileDevice">
                         See the Difference

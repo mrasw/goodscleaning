@@ -58,7 +58,7 @@ const services = ref([
             <div class="grid mt-10 gap-6 text-hijau-text"
                 :class="[props.app.isDesktopDevice ? 'grid-cols-[repeat(auto-fit,minmax(390px,1fr))]' : 'grid-flow-row']">
 
-                <div class="card w-90 shadow-sm mx-auto" v-for="service in services">
+                <div class="card w-85 shadow-sm mx-auto" v-for="service in services">
                     <!-- <figure>
                         <img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
                             alt="Shoes" />

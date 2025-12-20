@@ -24,7 +24,7 @@ const props = defineProps({
                     <div>
                         <span
                             class="font-poppins text-base text-hijau-text underline underline-offset-8 decoration-hijau-decoration">
-                            ABOUT US
+                            Tentang Kami
                         </span>
                     </div>
 
@@ -34,14 +34,20 @@ const props = defineProps({
                         <h2 class=" font-poppins-600 text-hijau-text leading-tight"
                         :class="[props.app.isDesktopDevice?'text-5xl':'text-[32px]']"
                         >
-                            Bringing Clean, Comfort, and Care Together
+                            Bawa Kebersihan Sepatu Anda ke Level Baru
                         </h2>
 
-                        <p class="text-base font-poppins-300 text-hijau-text">
-                            We are a team of passionate cleaning experts who take pride in delivering the
-                            highest standard of service. With years of experience in the industry, we’ve
-                            perfected our cleaning methods to ensure every job is done right.
-                        </p>
+                        <div class="space-y-7">
+                            <p class="text-base font-poppins-300 text-hijau-text">
+                                Goods Cleaning hadir sebagai layanan perawatan sepatu profesional yang mengutamakan kualitas, kecepatan, dan kenyamanan.
+                            </p>
+                            <p class="text-base font-poppins-300 text-hijau-text">
+                                Dengan teknologi steam cleaning, durasi cepat, dan layanan antar jemput, kami menghadirkan pengalaman shoe care modern yang praktis untuk upgrade pencucian sepatu Anda.
+                            </p>
+                            <p class="text-base font-poppins-300 text-hijau-text">
+                                Kami berkomitmen menghadirkan sepatu Anda kembali dalam kondisi terbaik lebih bersih, dan siap mendukung setiap langkah Anda.
+                            </p>
+                        </div>
                     </div>
 
                     <button

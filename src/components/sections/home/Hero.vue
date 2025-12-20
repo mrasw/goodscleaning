@@ -14,6 +14,8 @@
     import 'swiper/css/pagination';
     import 'swiper/css/autoplay';
 
+    import { Icon } from "@iconify/vue";
+
     import { ref, watch, computed } from 'vue';
     const props = defineProps(({
         app: Object,
@@ -93,7 +95,7 @@
                     <div class="mb-3 mx-5 flex justify-between">
                         <div class="flex items-center">
                             <span class="text-abu font-poppins text-xs">
-                                Expert dalam mengatasi noda membandel, dan memberikan hasil maksimal.
+                                <!-- Expert dalam mengatasi noda membandel, dan memberikan hasil maksimal. -->
                             </span>
                         </div>
                         <div  
@@ -103,7 +105,9 @@
                             <button
                                 class="btn text-kuning bg-hijau-text dark:bg-kuning dark:text-hijau-text border-none shadow-none  font-poppins font-bold"
                             >
-                                Find Us Nearby
+                                
+                                <Icon icon="mdi:location" width="24" height="24" class="not-dark:text-kuning-2 dark:text-hijau-text shrink-0" />
+                                Temukan Kami
                             </button>
                         </div>
                     </div>

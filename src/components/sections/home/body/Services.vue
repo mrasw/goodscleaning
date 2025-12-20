@@ -59,7 +59,7 @@ const services = ref([
                         <div class="mt-10 text-center">
                             <div>
                                 <span class="font-poppins-600 text-hijau-text"
-                                :class="[props.app.isDesktopDevice?'text-5xl ':'text-3xl ']"
+                                :class="[props.app.isDesktopDevice?'text-5xl ':'text-[28px]']"
                                 >
                                     Solusi Upgrade Pencucian Sepatu Sesuai Kebutuhan Anda
                                 </span>

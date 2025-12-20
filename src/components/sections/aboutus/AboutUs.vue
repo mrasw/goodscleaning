@@ -28,18 +28,18 @@ const layanan = ref([
 <template>
     <section>
         <div class="" :class="[props.app.isDesktopDevice?'px-17':'px-5']">
+            <div>
+                <span
+                    class="font-poppins text-base text-hijau-text underline underline-offset-8 decoration-hijau-decoration">
+                        TENTANG KAMI
+                </span>
+            </div>
             <div class="flex text-hijau-text"
-                :class="[props.app.isDesktopDevice?'flex-row justify-between':'flex-col space-y-4']"
+                :class="[props.app.isDesktopDevice?'flex-row justify-between gap-15 ':'flex-col space-y-4']"
             >
                 
                 <!-- LEFT -->
                 <div class="basis-3/5">
-                    <div>
-                        <span
-                            class="font-poppins text-base text-hijau-text underline underline-offset-8 decoration-hijau-decoration">
-                            ABOUT US
-                        </span>
-                    </div>
 
                     <div class=""
                     :class="[props.app.isDesktopDevice?'mt-10 space-y-8':'mt-6 space-y-6']"
@@ -48,7 +48,7 @@ const layanan = ref([
                         :class="[props.app.isDesktopDevice?'text-5xl':'text-[32px]']"
                         >
                             <span v-if="props.app.isDesktopDevice">
-                                Why Thousands Trust Goods Cleaning
+                                Alasan Mengapa Ribuan Pelanggan Mempercayai Goods Cleaning
                             </span>
                             <span v-if="props.app.isMobileDevice">
                                 Why Thousands Trust Us for Spotless Clean

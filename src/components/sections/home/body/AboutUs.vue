@@ -24,7 +24,7 @@ const props = defineProps({
                     <div>
                         <span
                             class="font-poppins text-base text-hijau-text underline underline-offset-8 decoration-hijau-decoration">
-                            Tentang Kami
+                            TENTANG KAMI
                         </span>
                     </div>
 

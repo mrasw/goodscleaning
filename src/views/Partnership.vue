@@ -17,7 +17,7 @@
     <section>
         <Hero :app="app"/>
         <div class="grid bg-putih "
-            :class="[app.isDesktopDevice?'pt-15 pb-20 px-15 gap-40':'pt-8 px-5 gap-20']"
+            :class="[app.isDesktopDevice?'pt-15 pb-20 px-15 gap-40':'py-8 px-5 gap-20']"
         >
             <AboutUs :app="app"/>
             <OurTrustedPartner :app="app"/>

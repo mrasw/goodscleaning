@@ -35,7 +35,7 @@ const features = ref([
                 <div class="relative w-full mx-auto flex justify-center" :class="[props.app.isDesktopDevice ? '' : 'max-w-3xs order-2']">
 
                     <!-- padding agar area “keluar” floating tetap punya ruang -->
-                    <div class="mt-[10%] mr-[10%] relative aspect-[3/4] w-3/4">
+                    <div class="mt-[10%] mr-[10%] relative aspect-3/4 w-3/4">
                         <!-- MAIN IMAGE -->
                         <div class="absolute inset-0 bg-gray-300 rounded-3xl"></div>
                         <!-- FLOATING IMAGE -->
@@ -81,10 +81,7 @@ const features = ref([
                                 :class="[props.app.isDesktopDevice?'gap-4 mt-6':'gap-2']"
                                 >
                                     <li v-for="(item, index) in features" :key="index" class="flex items-center gap-3">
-                                        <Icon icon={{item.icon}} width="16" height="16"  class="text-hijau-text"/>
-                                        
-                                        <!-- <Icon icon="mdi:location" width="24" height="24" class="text-kuning-2 shrink-0" /> -->
-                                        <!-- <span class="text-3xl text-hijau-100">•</span> -->
+                                        <Icon :icon="item.icon" width="16" height="16"  class="text-hijau-text"/>
                                         <span>{{ item.feature }}</span>
                                     </li>
                                 </ul>

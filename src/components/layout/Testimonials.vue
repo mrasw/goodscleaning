@@ -120,12 +120,12 @@ watch(() => props.app.width, () => {
             <div class="text-center">
                 <span
                     class="font-poppins text-base text-hijau-text underline underline-offset-8 decoration-hijau-decoration">
-                    TESTIMONIALS
+                    TESTIMONI
                 </span>
             </div>
             <div class="mt-10 text-center">
                 <span class="font-poppins-600 text-hijau-text" :class="[app.isDesktopDevice ? 'text-5xl' : 'text-3xl']">
-                    Our Happy Customers
+                    Apa Kata Mereka
                 </span>
             </div>
         </div>

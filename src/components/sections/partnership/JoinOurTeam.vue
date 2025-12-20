@@ -18,22 +18,19 @@ const props = defineProps({
                     <div>
                         <span
                             class="font-poppins text-base text-hijau-text underline underline-offset-8 decoration-hijau-decoration">
-                            JOIN OUR TEAM
+                            BERGABUNG BERSAMA KAMI
                         </span>
                     </div>
                     <div class="grid gap-8">
                         <div>
                             <span class="font-poppins-600 text-hijau-text"
                                 :class="[props.app.isDesktopDevice ? 'text-5xl' : 'text-3xl']">
-                                Join Our Team of Professionals Cleaners
+                                Menjadi Bagian dari Tim Profesional Goods Cleaning
                             </span>
                         </div>
                         <div class="">
                             <span class="text-base font-poppins-300 text-hijau-text">
-                                Bergabunglah dengan tim Goods CLeaning dan rasakan suasana kerja yang
-                                profesional, suportif, dan penuh semangat. nda akan mendapatkan pengalaman
-                                berharga, mengasah keterampilan perawatan sepatu, dan menjadi bagian dari tim
-                                yang selalu menjaga kualitas terbaik.
+                                Bergabunglah dengan Goods Cleaning dan ambil peran penting dalam menghadirkan layanan terbaik.
                             </span>
                         </div>
                     </div>

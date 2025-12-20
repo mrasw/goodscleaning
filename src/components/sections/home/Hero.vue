@@ -66,49 +66,53 @@
             <div 
                 class=" mt-3 h-120 bg-putih dark:bg-gradient-hijau rounded-md relative"
             >
-                <div class="absolute inset-0 grid place-items-center">
-                    <div class="">
-                        <!-- Container dengan overflow hidden -->
-                        <div class="overflow-hidden">
-                            <!--line negative margin -->
-                            <div
-                                class="text-9xl not-dark:text-gradient-hijau-100 dark:text-kuning-3 dark:text-shadow-3d-left font-poppins-900 tracking-tighter my-3 mx-3"
-                            >
-                                <div>
-                                    <div class="block leading-[0.8]">GOODS</div>
-                                    <div class="block leading-[0.8]">CLEANING</div>
+
+                <div class="grid grid-rows-9">
+                    <div class="row-start-2 row-span-7 place-items-center my-auto">
+                        <div class="">
+                            <!-- Container dengan overflow hidden -->
+                            <div class="overflow-hidden">
+                                <!--line negative margin -->
+                                <div
+                                    class="text-9xl not-dark:text-gradient-hijau-100 dark:text-kuning-3 dark:text-shadow-3d-left font-poppins-900 tracking-tighter my-3 mx-3"
+                                >
+                                    <div>
+                                        <div class="block leading-[0.8]">GOODS</div>
+                                        <div class="block leading-[0.8]">CLEANING</div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
 
-                        <!-- hashtag -->
-                        <div class="text-end dark:text-center">
-                            <span 
-                                class="text-kuning-2 text-xl block font-poppins-700"
-                            >
-                                #CuciCepatTetapHemat
-                            </span>
+                            <!-- hashtag -->
+                            <div class="text-end dark:text-center">
+                                <span 
+                                    class="text-kuning-2 text-xl block font-poppins-700"
+                                >
+                                    #CuciCepatTetapHemat
+                                </span>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="h-full content-end">
-                    <div class="mb-3 mx-5 flex justify-between">
-                        <div class="flex items-center">
-                            <span class="text-abu font-poppins text-xs">
-                                <!-- Expert dalam mengatasi noda membandel, dan memberikan hasil maksimal. -->
-                            </span>
-                        </div>
-                        <div  
-                            class=""
-                            :class="[]"
-                        >
-                            <button
-                                class="btn text-kuning bg-hijau-text dark:bg-kuning dark:text-hijau-text border-none shadow-none  font-poppins font-bold"
+
+                    <div class="row-start-9">
+                        <div class="mb-3 mx-5 flex justify-between">
+                            <div class="flex items-center">
+                                <span class="text-abu font-poppins text-xs">
+                                    <!-- Expert dalam mengatasi noda membandel, dan memberikan hasil maksimal. -->
+                                </span>
+                            </div>
+                            <div  
+                                class=""
+                                :class="[]"
                             >
-                                
-                                <Icon icon="mdi:location" width="24" height="24" class="not-dark:text-kuning-2 dark:text-hijau-text shrink-0" />
-                                Temukan Kami
-                            </button>
+                                <button
+                                    class="btn text-kuning bg-hijau-text dark:bg-kuning dark:text-hijau-text border-none shadow-none  font-poppins font-bold"
+                                >
+                                    
+                                    <Icon icon="mdi:location" width="24" height="24" class="not-dark:text-kuning-2 dark:text-hijau-text shrink-0" />
+                                    Temukan Kami
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>

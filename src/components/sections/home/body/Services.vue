@@ -17,7 +17,7 @@ const props = defineProps({
 
 const services = ref([
     {
-        'name': 'basic Cleaning',
+        'name': 'Basic Cleaning',
         'desc': 'Mencuci hanya bagian luar (Footer, Upper, Midsol, dan Tali Sepatu)',
     },
     {
@@ -49,11 +49,11 @@ const services = ref([
         <div :class="[props.app.isDesktopDevice ? 'mx-17' : 'mx-3']">
             <div>
                 <div class="justify-items-center">
-                    <div :class="[props.app.isDesktopDevice ? 'w-2/3' : 'w-full']">
+                    <div :class="[props.app.isDesktopDevice ? 'w-3/4' : 'w-full']">
                         <div class="text-center">
                             <span
                                 class="font-poppins text-base text-hijau-text underline underline-offset-8 decoration-hijau-decoration">
-                                SERVICES
+                                LAYANAN KAMI
                             </span>
                         </div>
                         <div class="mt-10 text-center">
@@ -61,14 +61,12 @@ const services = ref([
                                 <span class="font-poppins-600 text-hijau-text"
                                 :class="[props.app.isDesktopDevice?'text-5xl ':'text-3xl ']"
                                 >
-                                    Our Cleaning Services
+                                    Solusi Upgrade Pencucian Sepatu Sesuai Kebutuhan Anda
                                 </span>
                             </div>
                             <div class="mt-6">
                                 <span class="text-base font-poppins-300 text-hijau-text">
-                                    Kami menyediakan jasa kebersihan profesional sesuai kebutuhan Anda—mulai dari
-                                    pembersihan menyeluruh hingga layanan khusus, semuanya dengan standar tinggi dan
-                                    perhatian pada detail.
+                                    Kami menghadirkan pengalaman perawatan sepatu yang dirancang untuk meng-upgrade standar kebersihan dan kualitas sepatu Anda. Dengan proses rapi, teliti, dan penuh perhatian pada detail, sepatu kembali bersih, terawat, dan tampil maksimal.
                                 </span>
                             </div>
                         </div>
@@ -96,7 +94,7 @@ const services = ref([
                     <div class="justify-items-center">
                         <div class="w-fit">
                             <button
-                                class="btn dark:text-kuning dark:bg-hijau-text bg-kuning text-hijau-text border-none shadow-none   font-poppins font-bold">
+                                class="btn text-kuning bg-hijau-text dark:bg-kuning dark:text-hijau-text border-none shadow-none font-poppins font-bold">
                                 Learn More
                             </button>
                         </div>

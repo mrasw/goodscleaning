@@ -7,19 +7,19 @@ const props = defineProps({
 })
 const features = ref([
     {
-        'feature': 'Experience & Reliable',
+        'feature': 'Berpengalaman & Terpercaya',
         'icon': "vaadin:medal",
     },
     {
-        'feature': 'Good Products',
-        'icon': "streamline-plump:ok-hand-solid",
-    },
-    {
-        'feature': 'Flexible Scheduling',
+        'feature': 'Penjadwalan Flexible',
         'icon': "hugeicons:date-time",
     },
     {
-        'feature': 'Transparent Pricing',
+        'feature': 'Produk Aman & Berkualitas',
+        'icon': "streamline-plump:ok-hand-solid",
+    },
+    {
+        'feature': 'Harga Transparan & Hemat',
         'icon': "entypo:price-tag",
     },
 ])
@@ -58,13 +58,13 @@ const features = ref([
                     <div>
                         <span class="font-poppins text-base text-hijau-text 
                                 underline underline-offset-8 decoration-hijau-decoration">
-                            WHY CHOOSE US
+                            KENAPA HARUS GOODS CLEANING
                         </span>
                     </div>
 
                     <div class="mt-6 md:mt-10">
                         <h2 class="text-3xl md:text-4xl lg:text-5xl font-poppins-600 text-hijau-text">
-                            Why Clients Love Our Cleaning Services
+                            Mengapa Goods Cleaning menjadi pilihan
                         </h2>
 
                         <div class="mt-6 md:mt-8 text-hijau-text"
@@ -72,19 +72,19 @@ const features = ref([
                         >
                             <div>
                                 <p class="text-base md:text-lg font-poppins-300 leading-relaxed">
-                                    Kami berkomitmen pada kualitas, keandalan, dan kepedulian di setiap layanan.
-                                    Dengan produk aman, jadwal jelas, dan harga transparan, kami hadir untuk
-                                    memberikan kenyamanan serta kepuasan maksimal bagi setiap pelanggan.
+                                    Kami percaya perawatan sepatu harus praktis, cepat, dan terjangkau. Dengan teknologi steam uap, proses pencucian lebih efektif dan aman untuk berbagai material. Didukung durasi pengerjaan ±3 hari serta layanan antar jemput, Goods Cleaning hadir sebagai solusi upgrade pencucian bagi yang ingin sepatu bersih maksimal tanpa mengorbankan waktu dan biaya.
                                 </p>
                             </div>
 
                             <div class="">
                                 <ul class="grid grid-cols-1 sm:grid-cols-2 font-poppins-500"
-                                :class="[props.app.isDesktopDevice?'gap-4':'gap-2']"
+                                :class="[props.app.isDesktopDevice?'gap-4 mt-6':'gap-2']"
                                 >
                                     <li v-for="(item, index) in features" :key="index" class="flex items-center gap-3">
-                                        <!-- <Icon :icon="[item.icon]" width="16" height="16"  :style="{color: '#E8C100'}"/> -->
-                                        <span class="text-3xl text-hijau-100">•</span>
+                                        <Icon icon={{item.icon}} width="16" height="16"  class="text-hijau-text"/>
+                                        
+                                        <!-- <Icon icon="mdi:location" width="24" height="24" class="text-kuning-2 shrink-0" /> -->
+                                        <!-- <span class="text-3xl text-hijau-100">•</span> -->
                                         <span>{{ item.feature }}</span>
                                     </li>
                                 </ul>

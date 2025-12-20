@@ -54,10 +54,18 @@ const services = ref([
         'detail': ''
     },
 ])
+
+
+const numberWithDots = (x) => {
+    return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+}
+
 </script>
 <template>
     <section>
-        <div class="grid gap-20">
+        <div class="grid"
+        :class="[props.app.isDesktopDevice?'gap-20':'gap-12']"
+        >
             <div class="grid gap-6">
                 <div class="text-center">
                     <span
@@ -90,14 +98,14 @@ const services = ref([
                             </p>
                             <div class="grid card-actions justify-end text-end font-bold">
                                 <div class="grid gap-1 items-center justify-end" v-if="service.detail">
-                                    <div class="text-xl" v-for="sd in service.detail">Size {{ sd.size }} Rp {{ sd.harga }}</div>
+                                    <div class="text-xl" v-for="sd in service.detail">Size {{ sd.size }} Rp.{{ numberWithDots(sd.harga) }}</div>
                                 </div>
                                 <div v-else>
                                     <div class="flex gap-1 items-center justify-end">
                                         <Icon icon="lsicon:time-one-filled" width="16" height="16" class="text-hijau-text shrink-0"/>
                                         {{service.waktu}} Hari
                                     </div>
-                                    <div class="text-xl">Rp. {{ service.harga }}</div>
+                                    <div class="text-xl">Rp.{{ numberWithDots(service.harga) }}</div>
                                 </div>
                             </div>
                         </div>
@@ -108,10 +116,14 @@ const services = ref([
                 <div class="flex items-center"
                 :class="[props.app.isDesktopDevice?'flex-row':'flex-col space-y-2']"
                 >
-                    <span class="text-3xl text-hijau-text bg-kuning-3 font-poppins-500 px-2 block w-fit">
+                    <span class="text-hijau-text bg-kuning-3 font-poppins-500 px-2 block w-fit"
+                    :class="[props.app.isDesktopDevice?'text-3xl':'text-xl']"
+                    >
                         Antar Jemput Gratis
                     </span>
-                    <span class="text-xl text-hijau-text font-poppins">
+                    <span class=" text-hijau-text font-poppins"
+                    :class="[props.app.isDesktopDevice?'text-xl':'text-sm']"
+                    >
                         *Khusus Wilayah Bojonggede
                     </span>
                 </div>

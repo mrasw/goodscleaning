@@ -35,7 +35,7 @@ console.log('oi')
                         <div>
                             <span
                                 class="font-poppins text-base text-hijau-text underline underline-offset-8 decoration-hijau-decoration">
-                                OUR TRUSTER PARTNER
+                                PARTNER KAMI
                             </span>
                         </div>
                         <div class="grid gap-8">

@@ -16,8 +16,8 @@
 <template>
     <section>
         <Hero :app="app"/>
-        <div class="grid px-15 bg-putih "
-            :class="[app.isDesktopDevice?'pt-15 pb-20 gap-40':'pt-8']"
+        <div class="grid bg-putih "
+            :class="[app.isDesktopDevice?'pt-15 pb-20 px-15 gap-40':'pt-8 px-5']"
         >
             <AboutUs :app="app"/>
             <OurTrustedPartner :app="app"/>

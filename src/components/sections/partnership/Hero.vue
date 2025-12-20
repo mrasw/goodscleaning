@@ -14,7 +14,7 @@ const props = defineProps({
         ">
             <div class="text-center">
                 <article class="prose text-white font-poppins-500 mx-auto"
-                :class="[props.app.isDesktopDevice?'text-6xl w-3/4':'text-2xl']"
+                :class="[props.app.isDesktopDevice?'text-6xl w-3/4':'text-2xl px-2']"
                 >
                     <span>Tumbuh Bersama Kami<br>Jadilah Mitra Goods Cleaning</span>
                 </article>

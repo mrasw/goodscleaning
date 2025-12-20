@@ -137,7 +137,7 @@ watch(() => props.app.width, () => {
         </div>
 
         <!-- Testimonials Slider -->
-        <div v-else class="px-17">
+        <div v-else :class="[props.app.isDesktopDevice?'px-17':'px-3']">
             <!-- Debug Info  -->
             <!-- <div class="text-xs text-gray-500 mb-2">
                 Debug: Items per slide: {{ itemsPerSlide }}, Reviews: {{ reviews.length }}, Slides: {{ slides.length }}

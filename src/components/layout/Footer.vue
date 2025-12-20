@@ -13,8 +13,8 @@ const props = defineProps({
     <section>
         <footer class="footer sm:footer-horizontal bg-hijau-text rounded-b-md text-white"
             :class="[props.app.isDesktopDevice ? 'px-16 py-21' : 'px-3 py-4']">
-            <div class="" :class="[props.app.isDesktopDevice ? 'flex flex-row gap-9' : 'grid']">
-                <div class="basis-5/12">
+            <div class="" :class="[props.app.isDesktopDevice ? 'flex flex-row ' : 'grid']">
+                <div class="basis-4/12">
                     <aside>
                         <div :class="[props.app.isDesktopDevice ? 'space-y-6' : 'space-y-4']">
                             <div>
@@ -22,9 +22,7 @@ const props = defineProps({
                             </div>
                             <div>
                                 <p>
-                                    We are a team of passionate cleaning experts who take pride in delivering the
-                                    highest standard of service. With years of experience in the industry, we’ve
-                                    perfected our cleaning methods to ensure every job is done right.
+                                    Kami adalah tim profesional yang berpengalaman dalam perawatan sepatu. Dengan standar kerja tinggi dan perhatian pada setiap detail, kami memastikan setiap pasang sepatu ditangani dengan metode terbaik. Berbekal pengalaman bertahun-tahun, kami terus menyempurnakan proses pencucian agar hasil yang diberikan selalu maksimal bersih, rapi, dan layak dipercaya.
                                 </p>
                             </div>
                         </div>
@@ -41,6 +39,9 @@ const props = defineProps({
                             </a>
                         </div>
                     </aside>
+                </div>
+                <div class="basis-1/12">
+
                 </div>
                 <div class="basis-7/12" :class="[props.app.isDesktopDevice ? 'grid grid-flow-col lg:gap-14 md:gap-4' : 'grid gap-8']">
                     <div :class="[props.app.isDesktopDevice?'grid grid-cols-2':'grid grid-cols-2']">

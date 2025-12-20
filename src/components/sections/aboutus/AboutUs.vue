@@ -51,7 +51,7 @@ const layanan = ref([
                                 Alasan Mengapa Ribuan Pelanggan Mempercayai Goods Cleaning
                             </span>
                             <span v-if="props.app.isMobileDevice">
-                                Why Thousands Trust Us for Spotless Clean
+                                Alasan Mengapa Ribuan Pelanggan Mempercayai Goods Cleaning
                             </span>
                         </h2>
                     </div>

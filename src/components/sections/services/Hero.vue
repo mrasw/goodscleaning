@@ -13,10 +13,10 @@ const props = defineProps({
             bg-linear-to-b from-hijau-text to-hijau-1 space-y-8 pt-13 pb-11
         ">
             <div class="text-center">
-                <article class="prose text-white font-poppins-500 mx-auto"
+                <article class="prose text-white font-poppins-500 mx-auto px-5"
                 :class="[props.app.isDesktopDevice?'text-6xl w-2/3':'text-2xl']"
                 >
-                    <span>Our Professional Cleaning Services</span>
+                    <span>Layanan Kebersihan Profesional Kami</span>
                 </article>
             </div>
             <div class="text-center">

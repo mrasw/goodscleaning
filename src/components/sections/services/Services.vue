@@ -51,7 +51,7 @@ const services = ref([
             <div class="text-center">
                 <span
                     class="font-poppins text-base text-hijau-text underline underline-offset-8 decoration-hijau-decoration">
-                    Services
+                    LAYANAN KAMI
                 </span>
             </div>
 

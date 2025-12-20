@@ -103,7 +103,7 @@
                             <button
                                 class="btn text-kuning bg-hijau-text dark:bg-kuning dark:text-hijau-text border-none shadow-none  font-poppins font-bold"
                             >
-                                Learn More
+                                Find Us Nearby
                             </button>
                         </div>
                     </div>

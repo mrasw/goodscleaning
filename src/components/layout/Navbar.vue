@@ -27,9 +27,9 @@ const props = defineProps({
         </div>
         <div class="navbar-center hidden lg:flex">
             <ul class="menu menu-horizontal px-1 font-poppins font-bold text-white">
-                <li><a href="/" :class="[(props.path == '/')?'underline underline-offset-8 decoration-kuning-3':'']">Home</a></li>
-                <li><a href="/aboutus" :class="[(props.path == '/aboutus')?'underline underline-offset-8 decoration-kuning-3':'']">About Us</a></li>
-                <li><a href="/services" :class="[(props.path == '/services')?'underline underline-offset-8 decoration-kuning-3':'']">Services</a></li>
+                <li><a href="/" :class="[(props.path == '/')?'underline underline-offset-8 decoration-kuning-3':'']">Beranda</a></li>
+                <li><a href="/aboutus" :class="[(props.path == '/aboutus')?'underline underline-offset-8 decoration-kuning-3':'']">Tentang Kami</a></li>
+                <li><a href="/services" :class="[(props.path == '/services')?'underline underline-offset-8 decoration-kuning-3':'']">Layanan</a></li>
                 <li><a href="/partnership" :class="[(props.path == '/partnership')?'underline underline-offset-8 decoration-kuning-3':'']">Partnership</a></li>
             </ul>
         </div>
@@ -48,7 +48,7 @@ const props = defineProps({
                             rounded-box z-11 mt-3 w-52 p-2 shadow font-poppins
                         "
                 >
-                    <li><a class="not-dark:text-gradient-hijau-100 dark:text-kuning-3">Contact Us</a></li>
+                    <li><a class="not-dark:text-gradient-hijau-100 dark:text-kuning-3">Hubungi Kamui</a></li>
                 </ul>
             </div>
             <div v-if="app.isDesktopDevice">
@@ -56,7 +56,7 @@ const props = defineProps({
                     <a class="btn bg-kuning border-none shadow-none text-hijau-text font-poppins font-bold" href="https://wa.me/6285819423066" target="_blank">
                         <Icon icon="ic:baseline-whatsapp" width="24" height="24" :style="{ color: '#02402C' }" />
                         <span>
-                            Contact Us
+                            Hubungi Kami
                         </span>
                     </a>
                 </div>

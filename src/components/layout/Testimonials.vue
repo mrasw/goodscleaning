@@ -167,19 +167,19 @@ watch(() => props.app.width, () => {
 
                             <!-- Rating Stars -->
                             <div class="rating rating-xs">
-                                <input type="radio" :name="`rating-${slideIndex}-${index}`"
+                                <input type="radio" disabled :name="`rating-${slideIndex}-${index}`"
                                     class="mask mask-star-2 bg-orange-400" aria-label="1 star"
                                     :checked="review.rating === 1" />
-                                <input type="radio" :name="`rating-${slideIndex}-${index}`"
+                                <input type="radio" disabled :name="`rating-${slideIndex}-${index}`"
                                     class="mask mask-star-2 bg-orange-400" aria-label="2 star"
                                     :checked="review.rating === 2" />
-                                <input type="radio" :name="`rating-${slideIndex}-${index}`"
+                                <input type="radio" disabled :name="`rating-${slideIndex}-${index}`"
                                     class="mask mask-star-2 bg-orange-400" aria-label="3 star"
                                     :checked="review.rating === 3" />
-                                <input type="radio" :name="`rating-${slideIndex}-${index}`"
+                                <input type="radio" disabled :name="`rating-${slideIndex}-${index}`"
                                     class="mask mask-star-2 bg-orange-400" aria-label="4 star"
                                     :checked="review.rating === 4" />
-                                <input type="radio" :name="`rating-${slideIndex}-${index}`"
+                                <input type="radio" disabled :name="`rating-${slideIndex}-${index}`"
                                     class="mask mask-star-2 bg-orange-400" aria-label="5 star"
                                     :checked="review.rating === 5" />
                             </div>

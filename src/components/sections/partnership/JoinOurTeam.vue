@@ -9,19 +9,25 @@ const props = defineProps({
 <template>
     <!-- join our team -->
     <section>
-        <div class="grid gap-16" :class="[props.app.isDesktopDevice ? 'grid-cols-2 gap-16 px-16' : 'px-3']">
-            <div>
+        <div class="grid" :class="[props.app.isDesktopDevice ? 'grid-cols-2 gap-16 px-16' : 'px-3 gap-6']">
+            <div :class="[props.app.isDesktopDevice?'':'order-2']">
                 <div class=" h-126 bg-gray-200 max-h-126 rounded-3xl"></div>
             </div>
-            <div class="content-center">
-                <div class="grid gap-10">
+            <div class="content-center"
+                :class="[props.app.isDesktopDevice?'':'order-1']"
+            >
+                <div class="grid"
+                :class="[props.app.isDesktopDevice?'gap-10':'gap-6']"
+                >
                     <div>
                         <span
                             class="font-poppins text-base text-hijau-text underline underline-offset-8 decoration-hijau-decoration">
                             BERGABUNG BERSAMA KAMI
                         </span>
                     </div>
-                    <div class="grid gap-8">
+                    <div class="grid"
+                    :class="[props.app.isDesktopDevice?'gap-8':'gap-4']"
+                    >
                         <div>
                             <span class="font-poppins-600 text-hijau-text"
                                 :class="[props.app.isDesktopDevice ? 'text-5xl' : 'text-3xl']">

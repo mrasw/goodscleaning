@@ -16,12 +16,18 @@
 
 <template>
     <section>
-        <div class="rounded-2xl bg-kuning-3 grid gap-16 py-12">
-            <div class="grid gap-10">
-                <div class="px-22 ">
+        <div class="rounded-2xl bg-kuning-3 grid py-12"
+        :class="[props.app.isDesktopDevice?'gap-16':'gap-6']"
+        >
+            <div class="grid"
+            :class="[props.app.isDesktopDevice?'gap-10':'gap-3']"
+            >
+                <div :class="[props.app.isDesktopDevice?'px-22':'px-3']">
                     <img :src="bottomheroimg" alt="">
                 </div>
-                <div class="text-center text-3xl text-hijau-text font-poppins-700">
+                <div class="text-center text-hijau-text font-poppins-700"
+                :class="[props.app.isDesktopDevice?'text-3xl':'text-xl']"
+                >
                     <span>#CuciCepatTetapHemat</span>
                 </div>
             </div>

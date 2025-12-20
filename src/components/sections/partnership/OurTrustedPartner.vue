@@ -12,10 +12,11 @@ console.log('oi')
 <template>
     <!-- partner with us -->
     <section>
-        <div class="grid gap-40">
-            <div class="grid gap-16" :class="[props.app.isDesktopDevice ? 'grid-cols-2 gap-16 px-16' : 'px-3']">
+        <div class="grid" :class="[props.app.isDesktopDevice?' gap-40':'gap-20']">
+            <div class="grid " :class="[props.app.isDesktopDevice ? 'grid-cols-2 gap-16 px-16' : 'px-3 gap-6']">
                 <div class="flex flex-col "
-                    :class="[props.app.isDesktopDevice ? ' h-[584px] gap-4' : 'h-[355px] gap-3']">
+                    :class="[props.app.isDesktopDevice ? ' h-[584px] gap-4' : 'h-[355px] gap-3 order-2']"
+                >
                     <!-- Top component dengan width 100% -->
                     <div class="bg-gray-200 grow w-full"
                         :class="[props.app.isDesktopDevice ? ' rounded-3xl' : ' rounded-2xl']"></div>
@@ -30,18 +31,24 @@ console.log('oi')
                             :class="[props.isDesktopDevice ? 'rounded-3xl' : 'rounded-2xl']"></div>
                     </div>
                 </div>
-                <div class="content-center">
-                    <div class="grid gap-10">
+                <div class="content-center"
+                :class="[props.app.isDesktopDevice?'':'order-1']"
+                >
+                    <div class="grid"
+                    :class="[props.app.isDesktopDevice?'gap-10':'gap-6']"
+                    >
                         <div>
                             <span
                                 class="font-poppins text-base text-hijau-text underline underline-offset-8 decoration-hijau-decoration">
                                 PARTNER KAMI
                             </span>
                         </div>
-                        <div class="grid gap-8">
+                        <div class="grid"
+                            :class="[props.app.isDesktopDevice?'gap-8':'gap-4']"
+                        >
                             <div>
-                                <span class="font-poppins-600 text-hijau-text leading-15"
-                                    :class="[props.app.isDesktopDevice ? 'text-5xl' : 'text-3xl']">
+                                <span class="font-poppins-600 text-hijau-text"
+                                    :class="[props.app.isDesktopDevice ? 'text-5xl  leading-15' : 'text-3xl']">
                                     Goods Cleaning <br> Depok
                                 </span>
                             </div>
@@ -106,7 +113,7 @@ console.log('oi')
                             </div>
                         </div>
                     </div>
-                    <div class="basis-2/5">
+                    <div class="basis-2/5" v-if="props.app.isDesktopDevice">
                         <div class=" h-118 bg-gray-200 max-h-118 rounded-3xl"></div>
                     </div>
                 </div>

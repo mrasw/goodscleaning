@@ -62,7 +62,7 @@ const services = ref([
                 <div class="text-center">
                     <span
                         class="font-poppins text-base text-hijau-text underline underline-offset-8 decoration-hijau-decoration">
-                        Other Services
+                        LAINNYA
                     </span>
                 </div>
                 <div class="grid gap-6 text-hijau-text"

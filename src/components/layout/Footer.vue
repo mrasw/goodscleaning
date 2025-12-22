@@ -112,7 +112,7 @@ const props = defineProps({
                                         <Icon icon="mdi:location" width="24" height="24" class="text-kuning-2 shrink-0" />
                                         <div>
                                             <h6 class="font-semibold">Bojong Gede</h6>
-                                            <span class="text-sm">Jl. Kp. Masjid No.43, Bojonggede</span>
+                                            <span class="">Jl. Kp. Masjid No.43, Bojonggede</span>
                                         </div>
                                     </div>
                                     
@@ -131,7 +131,7 @@ const props = defineProps({
                                         <Icon icon="mdi:location" width="24" height="24" class="text-kuning-2 shrink-0" />
                                         <div>
                                             <h6 class="font-semibold">Depok</h6>
-                                            <span class="text-sm">Jl. Al-Barkah No.4, Sawangan, Depok</span>
+                                            <span class="">Jl. Al-Barkah No.4, Sawangan, Depok</span>
                                         </div>
                                     </div>
                                     

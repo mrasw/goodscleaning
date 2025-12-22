@@ -52,7 +52,7 @@ const props = defineProps({
                                         <h4 class="text-white">Company</h4>
                                     </article>
                                 </div>
-                                <div>
+                                <div class="space-y-1">
                                     <div>
                                         <a class="link link-hover">Home</a>
                                     </div>
@@ -78,7 +78,7 @@ const props = defineProps({
                                         <h4 class=" text-white">Our Services</h4>
                                     </article>
                                 </div>
-                                <div>
+                                <div class="space-y-1">
                                     <div>
                                         <a class="link link-hover">Basic Cleaning</a>
                                     </div>

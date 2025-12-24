@@ -111,7 +111,7 @@ console.log(navbarItems)
             <div class="collapse-content text-sm font-poppins grid">
                 
                 <div v-for="item in navbarItems" >
-                    <a class="btn btn-ghost text-left block w-full " :href="item.path"
+                    <a class="btn btn-ghost text-left block w-full text-white" :href="item.path"
                     :class="[(props.path == item.path) ? 'underline underline-offset-8 decoration-kuning-3' : '']">{{ item.title }}</a>
                 </div>
                 

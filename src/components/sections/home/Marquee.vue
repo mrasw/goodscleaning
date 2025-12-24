@@ -21,7 +21,7 @@
                 :class="[props.app.isDesktopDevice?'text-xl':'text-xs']"
             >
                 <span v-if="index == 0" class="mx-4 text-3xl text-kuning-3">•</span>
-                <span class="font-poppins-500 text-base">
+                <span class="font-poppins font-bold">
                     {{ tag }}
                 </span>
                 <span v-if="index < tagLines.length - 1" class="mx-4 text-3xl text-kuning-3">•</span>

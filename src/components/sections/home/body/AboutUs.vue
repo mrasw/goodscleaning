@@ -54,7 +54,7 @@ const props = defineProps({
                         class="btn text-kuning bg-hijau-text dark:bg-kuning dark:text-hijau-text border-none shadow-none font-poppins font-bold"
                         :class="[props.app.isDesktopDevice?'mt-10':'mt-6']"
                     >
-                        Learn More
+                        Selengkapnya
                     </button>
                 </div>
 

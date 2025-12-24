@@ -49,7 +49,7 @@ console.log(navbarItems)
         <div class="navbar-start">
             <img :src="param.image" alt="">
         </div>
-        <div class="navbar-center hidden lg:flex">
+        <div class="navbar-center hidden flex">
             <ul class="menu menu-horizontal px-1 font-poppins font-bold text-white">
                 <li v-for="item in navbarItems">
                     <a :href="item.path"

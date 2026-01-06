@@ -54,13 +54,13 @@ const props = defineProps({
                                 </div>
                                 <div class="space-y-1">
                                     <div>
-                                        <a class="link link-hover">Home</a>
+                                        <a href="/" class="link link-hover">Home</a>
                                     </div>
                                     <div>
-                                        <a class="link link-hover">About us</a>
+                                        <a href="/aboutus" class="link link-hover">About us</a>
                                     </div>
                                     <div>
-                                        <a class="link link-hover">Our Services</a>
+                                        <a href="/services" class="link link-hover">Our Services</a>
                                     </div>
                                     <div>
                                         <a class="link link-hover">Testimonials</a>
@@ -80,22 +80,22 @@ const props = defineProps({
                                 </div>
                                 <div class="space-y-1">
                                     <div>
-                                        <a class="link link-hover">Basic Cleaning</a>
+                                        <a class="">Basic Cleaning</a>
                                     </div>
                                     <div>
-                                        <a class="link link-hover">Deep Cleaning</a>
+                                        <a class="">Deep Cleaning</a>
                                     </div>
                                     <div>
-                                        <a class="link link-hover">White Shoes Cleaning</a>
+                                        <a class="">White Shoes Cleaning</a>
                                     </div>
                                     <div>
-                                        <a class="link link-hover">Leather Shoes Cleaning</a>
+                                        <a class="">Leather Shoes Cleaning</a>
                                     </div>
                                     <div>
-                                        <a class="link link-hover">Extra Service</a>
+                                        <a class="">Extra Service</a>
                                     </div>
                                     <div>
-                                        <a class="link link-hover">Other Service</a>
+                                        <a class="">Other Service</a>
                                     </div>
                                 </div>
                             </nav>
@@ -112,7 +112,14 @@ const props = defineProps({
                                         <Icon icon="mdi:location" width="24" height="24" class="text-kuning-2 shrink-0" />
                                         <div>
                                             <h6 class="font-semibold">Bojong Gede</h6>
-                                            <span class="">Jl. Kp. Masjid No.43, Bojonggede</span>
+                                            <!-- <span class="">Jl. Kp. Masjid No.43, Bojonggede</span> -->
+                                            <a 
+                                                href="https://www.google.com/maps/place/Goods+Cleaning/@-6.4889342,106.7948356,17z/data=!3m1!4b1!4m6!3m5!1s0x2e69c35e46e1bbd3:0xf5471f2cec4db3ec!8m2!3d-6.4889342!4d106.7974159!16s%2Fg%2F11w1xz35t6?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoASAFQAw%3D%3D"
+                                                class="link link-hover"
+                                                target="_blank"
+                                            >
+                                                Jl. Kp. Masjid No.43, Bojonggede
+                                            </a>
                                         </div>
                                     </div>
                                     
@@ -131,7 +138,13 @@ const props = defineProps({
                                         <Icon icon="mdi:location" width="24" height="24" class="text-kuning-2 shrink-0" />
                                         <div>
                                             <h6 class="font-semibold">Depok</h6>
-                                            <span class="">Jl. Al-Barkah No.4, Sawangan, Depok</span>
+                                            <a 
+                                                href="https://www.google.com/maps/place/Goods+Cleaning/@-6.4325125,106.7785688,17z/data=!3m1!4b1!4m6!3m5!1s0x2e69e900489918b1:0x9fc0ae1e75d7a24!8m2!3d-6.4325125!4d106.7834344!16s%2Fg%2F11yd1fcmpw?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoASAFQAw%3D%3D"
+                                                class="link link-hover"
+                                                target="_blank"
+                                            >
+                                                Jl. Al-Barkah No.4, Sawangan, Depok
+                                            </a>
                                         </div>
                                     </div>
                                     

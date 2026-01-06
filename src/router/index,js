@@ -1,10 +1,20 @@
 import {createRouter, createWebHistory} from 'vue-router'
 
+const loadPageView = (page) => {
+    return () => import(`../views/${page}.vue`).catch(() => {
+        window.location.reload()
+    })
+}
+
 const routes = [
-    {path:'/', component: () => import('../views/Home.vue')},
-    {path:'/aboutus', component: () => import('../views/AboutUs.vue')},
-    {path:'/services', component: () => import('../views/Services.vue')},
-    {path:'/partnership', component: () => import('../views/Partnership.vue')},
+    // {path:'/', component: () => import('../views/Home.vue')},
+    // {path:'/aboutus', component: () => import('../views/AboutUs.vue')},
+    // {path:'/services', component: () => import('../views/Services.vue')},
+    // {path:'/partnership', component: () => import('../views/Partnership.vue')},
+    {path:'/', component: loadPageView('Home')},
+    {path:'/aboutus', component: loadPageView('AboutUs')},
+    {path:'/services', component: loadPageView('Services')},
+    {path:'/partnership', component: loadPageView('Partnership')},
 ]
 
 const router = createRouter({

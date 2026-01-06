@@ -4,7 +4,6 @@ const props = defineProps({
     app: Object,
 })
 
-console.log('oi')
 </script>
 
 
@@ -40,8 +39,10 @@ console.log('oi')
                             </div>
                         </div>
                         <div class="">
-                            <a href="#" target="_blank"
-                                class="btn dark:text-kuning dark:bg-hijau-text bg-kuning text-hijau-text border-none shadow-none font-poppins font-bold">
+                            <a
+                                href="/partnership"
+                                class="btn dark:text-kuning dark:bg-hijau-text bg-kuning text-hijau-text border-none shadow-none font-poppins font-bold"
+                            >
                                 Bermitra Goods Cleaing
                             </a>
                         </div>

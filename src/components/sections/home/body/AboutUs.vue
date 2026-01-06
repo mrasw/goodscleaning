@@ -50,12 +50,13 @@ const props = defineProps({
                         </div>
                     </div>
 
-                    <button
+                    <a
+                        href="/aboutus"
                         class="btn text-kuning bg-hijau-text dark:bg-kuning dark:text-hijau-text border-none shadow-none font-poppins font-bold"
                         :class="[props.app.isDesktopDevice?'mt-10':'mt-6']"
                     >
                         Selengkapnya
-                    </button>
+                    </a>
                 </div>
 
                 <div class="flex gap-2 md:gap-4 justify-center">

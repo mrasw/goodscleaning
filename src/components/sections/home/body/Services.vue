@@ -93,10 +93,12 @@ const services = ref([
                     </div>
                     <div class="justify-items-center">
                         <div class="w-fit">
-                            <button
-                                class="btn text-kuning bg-hijau-text dark:bg-kuning dark:text-hijau-text border-none shadow-none font-poppins font-bold">
+                            <a
+                                href="/services"
+                                class="btn text-kuning bg-hijau-text dark:bg-kuning dark:text-hijau-text border-none shadow-none font-poppins font-bold"
+                            >
                                 Learn More
-                            </button>
+                            </a>
                         </div>
                     </div>
                 </div>

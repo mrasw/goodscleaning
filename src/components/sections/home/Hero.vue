@@ -105,13 +105,21 @@
                                 class=""
                                 :class="[]"
                             >
-                                <button
+                                <!-- <button
+                                    class="btn text-kuning bg-hijau-text dark:bg-kuning dark:text-hijau-text border-none shadow-none  font-poppins font-bold"
+                                >
+                                    <Icon icon="mdi:location" width="24" height="24" class="not-dark:text-kuning-2 dark:text-hijau-text shrink-0" />
+                                    Temukan Kami
+                                </button> -->
+
+                                <a href="https://www.google.com/maps/place/Goods+Cleaning/@-6.4889342,106.7948356,17z/data=!3m1!4b1!4m6!3m5!1s0x2e69c35e46e1bbd3:0xf5471f2cec4db3ec!8m2!3d-6.4889342!4d106.7974159!16s%2Fg%2F11w1xz35t6?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoASAFQAw%3D%3D"
+                                    target="_blank"
                                     class="btn text-kuning bg-hijau-text dark:bg-kuning dark:text-hijau-text border-none shadow-none  font-poppins font-bold"
                                 >
                                     
                                     <Icon icon="mdi:location" width="24" height="24" class="not-dark:text-kuning-2 dark:text-hijau-text shrink-0" />
                                     Temukan Kami
-                                </button>
+                                </a>
                             </div>
                         </div>
                     </div>

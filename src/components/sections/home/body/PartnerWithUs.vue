@@ -60,7 +60,10 @@ const props = defineProps({
                     ></div>
                     
                     <!-- Bottom container dengan width sama -->
-                    <div class="flex gap-4 w-full">
+                    <div 
+                        class="flex w-full"
+                        :class="[props.app.isDesktopDevice?'gap-4':'gap-3']"
+                    >
                         <div class="flex-1 aspect-square bg-gray-200 "
                         :class="[props.isDesktopDevice?'rounded-3xl':'rounded-2xl']"
                         ></div>

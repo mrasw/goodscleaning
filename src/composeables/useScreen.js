@@ -4,10 +4,23 @@ export function useScreen() {
     const width = ref(window.innerWidth)
     const height = ref(window.innerHeight)
 
-    const onResize = () => {
+    function debounce(fn, delay) {
+        let timeoutId;
+        return (...args) => {
+            clearTimeout(timeoutId);
+            timeoutId = setTimeout(() => fn(...args), delay);
+        };
+    }
+
+    const onResize = debounce(() => {
         width.value = window.innerWidth
         height.value = window.innerHeight
-    }
+    })
+
+    // const onResize = () => {                 /// dont delete this
+    //     width.value = window.innerWidth
+    //     height.value = window.innerHeight
+    // }                                        /// end of dont delete this
 
     const isMobileScreen = computed(() => width.value < 640 )
 

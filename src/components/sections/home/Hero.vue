@@ -188,6 +188,7 @@
                             :src="param.imgSec1.sec1_1" 
                             :style="imageStyle.sec1_1"
                             class="object-cover w-full h-full"
+                            loading="eager"
                         />
                     </SwiperSlide>
                     <SwiperSlide>
@@ -196,7 +197,9 @@
                             :src="param.imgSec1.sec1_2" 
                             :style="imageStyle.sec1_2"
                             class="object-cover w-full h-full"
+                            loading="lazy"
                         />
+                        <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
                     </SwiperSlide>
                     <!-- <SwiperSlide>
                         <img :src="param.imgSec1.sec1_3" class="object-cover h-full object-[40%_70%]" />
@@ -207,7 +210,9 @@
                             :src="param.imgSec1.sec1_5" 
                             :style="imageStyle.sec1_5"
                             class="object-cover w-full h-full"
+                            loading="lazy"
                         />
+                        <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
                     </SwiperSlide>
                     <SwiperSlide>
                         <!-- <img :src="param.imgSec1.sec1_4" class="object-cover w-full h-full object-[50%_80%]" /> -->
@@ -215,7 +220,9 @@
                             :src="param.imgSec1.sec1_4" 
                             :style="imageStyle.sec1_4"
                             class="object-cover w-full h-full"
+                            loading="lazy"
                         />
+                        <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
                     </SwiperSlide>
                     <SwiperSlide>
                         <!-- <img :src="param.imgSec1.sec1_6" class="object-cover w-full h-full object-[15%_45%]" /> -->
@@ -223,7 +230,9 @@
                             :src="param.imgSec1.sec1_6" 
                             :style="imageStyle.sec1_6"
                             class="object-cover w-full h-full"
+                            loading="lazy"
                         />
+                        <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
                     </SwiperSlide>
                 </Swiper>
             </div>

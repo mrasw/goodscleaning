@@ -10,11 +10,14 @@ const props = defineProps({
 <template>
         <!-- partner with us -->
         <section>
-            <div class="grid gap-16"
-            :class="[props.app.isDesktopDevice?'grid-cols-2 gap-16 px-16':'px-3']"
+            <div class="grid"
+            :class="[props.app.isDesktopDevice?'grid-cols-2 gap-16 px-16':' gap-6 px-3']"
             >
                 <div class="content-center">
-                    <div class="grid gap-10">
+                    <div 
+                        class="grid "
+                        :class="[props.app.isDesktopDevice?'gap-10':'gap-6']"
+                        >
                         <div>
                             <span
                                 class="font-poppins text-base text-hijau-text underline underline-offset-8 decoration-hijau-decoration">
@@ -49,10 +52,10 @@ const props = defineProps({
                     </div>
                 </div>
                 <div class="flex flex-col "
-                :class="[props.app.isDesktopDevice?' h-[584px] gap-4':'h-[355px] gap-3']"
+                :class="[props.app.isDesktopDevice?' h-fit gap-4':'h-fit gap-3']"
                 >
                     <!-- Top component dengan width 100% -->
-                    <div class="bg-gray-200 grow w-full"
+                    <div class="bg-gray-200 grow w-full aspect-5/4"
                     :class="[props.app.isDesktopDevice?' rounded-3xl':' rounded-2xl']"
                     ></div>
                     

@@ -26,13 +26,17 @@
                     <img :src="bottomheroimg" alt="">
                 </div>
                 <div class="text-center text-hijau-text font-poppins-700"
-                :class="[props.app.isDesktopDevice?'text-3xl':'text-xl']"
+                :class="[props.app.isDesktopDevice?'text-3xl':'text-xs']"
                 >
                     <span>#CuciCepatTetapHemat</span>
                 </div>
             </div>
             <div class=" text-center">
-                <a class="btn btn-lg text-kuning border-none shadow-none bg-hijau-text font-poppins font-bold text-3xl" href="https://wa.me/6285819423066" target="_blank">
+                <a 
+                    class="btn btn-lg text-kuning border-none shadow-none bg-hijau-text font-poppins font-bold"
+                    :class="[props.app.isDesktopDevice?'text-3xl':'md:text-sm sm:text-xs']"
+                    href="https://wa.me/6285819423066" target="_blank"
+                >
                     <Icon icon="ic:baseline-whatsapp" width="28" height="28" class="kuning-3" />
                     <span>
                         Cuci Sekarang

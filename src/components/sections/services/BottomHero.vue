@@ -33,11 +33,12 @@
             </div>
             <div class=" text-center">
                 <a 
-                    class="btn btn-lg text-kuning border-none shadow-none bg-hijau-text font-poppins font-bold"
-                    :class="[props.app.isDesktopDevice?'text-3xl':'md:text-sm sm:text-xs']"
+                    class="btn  text-kuning border-none shadow-none bg-hijau-text font-poppins font-bold"
+                    :class="[props.app.isDesktopDevice?'text-3xl btn-lg':'md:text-sm sm:text-xs btn-sm']"
                     href="https://wa.me/6285819423066" target="_blank"
                 >
-                    <Icon icon="ic:baseline-whatsapp" width="28" height="28" class="kuning-3" />
+                    <Icon icon="ic:baseline-whatsapp" width="28" height="28" class="kuning-3" v-if="props.app.isDesktopDevice"/>
+                    <Icon icon="ic:baseline-whatsapp" width="20" height="20" class="kuning-3" v-if="! (props.app.isDesktopDevice)"/>
                     <span>
                         Cuci Sekarang
                     </span>

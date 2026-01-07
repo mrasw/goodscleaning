@@ -93,9 +93,11 @@ const services = ref([
                     </div>
                     <div class="justify-items-center">
                         <div class="w-fit">
+                            <!-- class="btn text-kuning bg-hijau-text dark:bg-kuning dark:text-hijau-text border-none shadow-none font-poppins font-bold" -->
                             <a
                                 href="/services"
-                                class="btn text-kuning bg-hijau-text dark:bg-kuning dark:text-hijau-text border-none shadow-none font-poppins font-bold"
+                                class="btn text-hijau-text bg-kuning dark:bg-hijau-text dark:text-kuning border-none shadow-none font-poppins font-bold"
+                                :class="[props.app.isDesktopDevice?'':'btn-sm']"
                             >
                                 Learn More
                             </a>

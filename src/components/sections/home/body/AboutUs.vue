@@ -50,10 +50,11 @@ const props = defineProps({
                         </div>
                     </div>
 
+                    <!-- class="btn text-kuning bg-hijau-text dark:bg-kuning dark:text-hijau-text border-none shadow-none font-poppins font-bold" -->
                     <a
                         href="/aboutus"
-                        class="btn text-kuning bg-hijau-text dark:bg-kuning dark:text-hijau-text border-none shadow-none font-poppins font-bold"
-                        :class="[props.app.isDesktopDevice?'mt-10':'mt-6']"
+                        class="btn dark:text-kuning dark:bg-hijau-text bg-kuning text-hijau-text border-none shadow-none font-poppins font-bold"
+                        :class="[props.app.isDesktopDevice?'mt-10':'mt-6 btn-sm']"
                     >
                         Selengkapnya
                     </a>

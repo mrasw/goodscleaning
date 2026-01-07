@@ -45,6 +45,7 @@ const props = defineProps({
                             <a
                                 href="/partnership"
                                 class="btn dark:text-kuning dark:bg-hijau-text bg-kuning text-hijau-text border-none shadow-none font-poppins font-bold"
+                                :class="[props.app.isDesktopDevice?'':'btn-sm']"
                             >
                                 Bermitra Goods Cleaing
                             </a>

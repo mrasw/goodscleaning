@@ -5,7 +5,7 @@ const props = defineProps({
     app: Object,
 })
 
-console.log('oi')
+console.log(props.app)
 </script>
 
 
@@ -67,19 +67,32 @@ console.log('oi')
                             </div>
                         </div>
                         <div class="text-hijau-text font-poppins-700 gap-4 grid">
-                            <div class="flex gap-4">
-                                <Icon icon="mdi:location" width="24" height="24" class="text-hijau-text shrink-0" />
+                            <div class="flex gap-4"
+                                :class="[props.app.isDesktopDevice?'':'text-sm']"
+                                >
+                                <Icon icon="mdi:location" width="24" height="24" class="text-hijau-text shrink-0" v-if="props.app.isDesktopDevice"/>
+                                <Icon icon="mdi:location" width="20" height="20" class="text-hijau-text shrink-0" v-if="!(props.app.isDesktopDevice)"/>
                                 <p>Kp. Kekupu, Jalan Masjid Jl. Al-Barkah No.04, RT 03/RW06, Pasir Putih, Kec. Sawangan,
                                     Kota Depok, Jawa Barat</p>
                             </div>
-                            <div class="flex gap-4 items-center">
+                            <div class="flex gap-4 items-center"
+                                :class="[props.app.isDesktopDevice?'':'text-sm']"
+                            >
                                 <Icon icon="lsicon:time-one-filled" width="24" height="24"
-                                    class="text-hijau-text shrink-0" />
+                                    class="text-hijau-text shrink-0" v-if="props.app.isDesktopDevice"/>
+                                <Icon icon="lsicon:time-one-filled" width="19" height="19"
+                                    class="text-hijau-text shrink-0" v-if="!(props.app.isDesktopDevice)"/>
                                 <p>Buka Setiap hari, Jam 11.00 – 16.00</p>
                             </div>
-                            <div class="flex gap-4 items-center">
-                                <Icon icon="mage:whatsapp-filled" width="24" height="24"
-                                    class="text-hijau-text shrink-0" />
+                            <div class="flex gap-4 items-center"
+                                :class="[props.app.isDesktopDevice?'':'text-sm']"
+                                >
+                                <Icon icon="mage:whatsapp-filled"
+                                    width="24" height="24"
+                                    class="text-hijau-text shrink-0" v-if="props.app.isDesktopDevice"/>
+                                <Icon icon="mage:whatsapp-filled"
+                                    width="20" height="20"
+                                    class="text-hijau-text shrink-0" v-else-if="!(props.app.isDesktopDevice)"/>
                                 <p>085885243062</p>
                             </div>
                         </div>
@@ -95,7 +108,7 @@ console.log('oi')
                             <div class="grid gap-8">
                                 <div>
                                     <span class="font-poppins-600 text-white"
-                                        :class="[props.app.isDesktopDevice ? 'text-4xl' : 'text-3xl']">
+                                        :class="[props.app.isDesktopDevice ? 'text-4xl' : 'text-[28px]']">
                                         Berpartnerlah Bersama Kami — Kembangkan Bisnis Anda bersama Goods Cleaning
                                     </span>
                                 </div>
@@ -110,7 +123,7 @@ console.log('oi')
                             <div class="">
                                 <a href="https://forms.gle/qqPPtMrVgqyCXFRb7" target="_blank"
                                     class="btn text-kuning bg-hijau-text w-full dark:bg-kuning dark:text-hijau-text border-none shadow-none font-poppins font-bold">
-                                    Join as Partner
+                                    Bergabung sebagai Partner
                                 </a>
                             </div>
                         </div>

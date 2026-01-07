@@ -150,7 +150,7 @@
                         <!-- hashtag -->
                         <div class="text-end w-full">
                             <span 
-                                class="text-kuning-2 text-xs block font-poppins-700"
+                                class="text-kuning-2 text-xs block font-poppins-700 px-3"
                             >
                                 #CuciCepatTetapHemat
                             </span>

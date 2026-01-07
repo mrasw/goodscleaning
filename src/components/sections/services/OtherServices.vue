@@ -98,14 +98,19 @@ const numberWithDots = (x) => {
                             </p>
                             <div class="grid card-actions justify-end text-end font-bold">
                                 <div class="grid gap-1 items-center justify-end" v-if="service.detail">
-                                    <div class="text-xl" v-for="sd in service.detail">Size {{ sd.size }} Rp.{{ numberWithDots(sd.harga) }}</div>
+                                    <div 
+                                        :class="[props.app.isDesktopDevice?'text-xl':'text-lg']" 
+                                        v-for="sd in service.detail"
+                                    >
+                                    Size {{ sd.size }} Rp.{{ numberWithDots(sd.harga) }}
+                                </div>
                                 </div>
                                 <div v-else>
                                     <div class="flex gap-1 items-center justify-end">
                                         <Icon icon="lsicon:time-one-filled" width="16" height="16" class="text-hijau-text shrink-0"/>
                                         {{service.waktu}} Hari
                                     </div>
-                                    <div class="text-xl">Rp.{{ numberWithDots(service.harga) }}</div>
+                                    <div :class="[props.app.isDesktopDevice?'text-xl':'text-lg']">Rp.{{ numberWithDots(service.harga) }}</div>
                                 </div>
                             </div>
                         </div>

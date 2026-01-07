@@ -34,7 +34,7 @@ const props = defineProps({
                     >
                         <div>
                             <span class="font-poppins-600 text-hijau-text"
-                                :class="[props.app.isDesktopDevice ? 'text-5xl' : 'text-3xl']">
+                                :class="[props.app.isDesktopDevice ? 'text-5xl' : 'text-[28px]']">
                                 Menjadi Bagian dari Tim Profesional Goods Cleaning
                             </span>
                         </div>
@@ -45,9 +45,12 @@ const props = defineProps({
                         </div>
                     </div>
                     <div class="">
+                        <!-- class="btn text-kuning bg-hijau-text dark:bg-kuning dark:text-hijau-text border-none shadow-none font-poppins font-bold"> -->
                         <a href="https://forms.gle/qqPPtMrVgqyCXFRb7" target="_blank"
-                            class="btn text-kuning bg-hijau-text dark:bg-kuning dark:text-hijau-text border-none shadow-none font-poppins font-bold">
-                            Join Team
+                            class="btn dark:text-kuning dark:bg-hijau-text bg-kuning text-hijau-text border-none shadow-none font-poppins font-bold"
+                            :class="[props.app.isDesktopDevice?'':'btn-sm']"
+                        >
+                            Gabung Tim
                         </a>
                     </div>
                 </div>

@@ -109,7 +109,10 @@ const props = defineProps({
                             <div class="grid space-y-5">
                                 <div class="inline-block">
                                     <div class="flex items-start gap-3">
-                                        <Icon icon="mdi:location" width="24" height="24" class="text-kuning-2 shrink-0" />
+                                        <div class="my-auto">
+                                            <Icon icon="mdi:location" width="24" height="24" class="text-kuning-2 shrink-0" v-if="props.app.isDesktopDevice"/>
+                                            <Icon icon="mdi:location" width="20" height="20" class="text-kuning-2 shrink-0" v-if="!(props.app.isDesktopDevice)"/>
+                                        </div>
                                         <div>
                                             <h6 class="font-semibold">Bojong Gede</h6>
                                             <!-- <span class="">Jl. Kp. Masjid No.43, Bojonggede</span> -->
@@ -124,7 +127,12 @@ const props = defineProps({
                                     </div>
                                     
                                     <div class="flex items-start gap-3 mt-2">
-                                        <Icon icon="mage:whatsapp-filled" width="24" height="24" class="text-kuning-2 shrink-0" />
+                                        <div class="my-auto">
+                                            <div class="my-auto">
+                                                <Icon icon="mage:whatsapp-filled" width="24" height="24" class="text-kuning-2 shrink-0" v-if="props.app.isDesktopDevice"/>
+                                                <Icon icon="mage:whatsapp-filled" width="20" height="20" class="text-kuning-2 shrink-0" v-if="!(props.app.isDesktopDevice)"/>
+                                            </div>
+                                        </div>
                                         <div>
                                             <h6 class="font-semibold">Contact Us</h6>
                                             <a href="https://wa.me/6285819423066" target="_blank" class="text-sm  hover:underline">
@@ -135,7 +143,10 @@ const props = defineProps({
                                 </div>
                                 <div class="inline-block">
                                     <div class="flex items-start gap-3">
-                                        <Icon icon="mdi:location" width="24" height="24" class="text-kuning-2 shrink-0" />
+                                        <div class="my-auto">
+                                            <Icon icon="mdi:location" width="24" height="24" class="text-kuning-2 shrink-0" v-if="props.app.isDesktopDevice"/>
+                                            <Icon icon="mdi:location" width="20" height="20" class="text-kuning-2 shrink-0" v-if="!(props.app.isDesktopDevice)"/>
+                                        </div>
                                         <div>
                                             <h6 class="font-semibold">Depok</h6>
                                             <a 
@@ -149,7 +160,10 @@ const props = defineProps({
                                     </div>
                                     
                                     <div class="flex items-start gap-3 mt-2">
-                                        <Icon icon="mage:whatsapp-filled" width="24" height="24" class="text-kuning-2 shrink-0" />
+                                        <div class="my-auto">
+                                            <Icon icon="mage:whatsapp-filled" width="24" height="24" class="text-kuning-2 shrink-0" v-if="props.app.isDesktopDevice"/>
+                                            <Icon icon="mage:whatsapp-filled" width="20" height="20" class="text-kuning-2 shrink-0" v-if="!(props.app.isDesktopDevice)"/>
+                                        </div>
                                         <div>
                                             <h6 class="font-semibold">Contact Us</h6>
                                             <a href="https://wa.me/6285885243062" target="_blank" class="text-sm  hover:underline">

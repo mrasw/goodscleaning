@@ -64,7 +64,7 @@
   font-style: normal;
   font-display: swap;
   font-weight: 300;
-  src: url(./assets/fonts/futura/Futura-Light.otf) format('otf')
+  src: url(./assets/fonts/futura/Futura-Light.otf) format('otf');
 }
 
 @font-face {
@@ -72,7 +72,7 @@
   font-style: normal;
   font-display: swap;
   font-weight: 400;
-  src: url(./assets/fonts/futura/Futura-Regular.ttf) format('truetype')
+  src: url(./assets/fonts/futura/Futura-Regular.ttf) format('truetype');
 }
 
 @font-face {
@@ -80,7 +80,7 @@
   font-style: normal;
   font-display: swap;
   font-weight: 500;
-  src: url(./assets/fonts/futura/Futura-Medium.otf) format('otf')
+  src: url(./assets/fonts/futura/Futura-Medium.otf) format('otf');
 }
 
 @font-face {
@@ -88,7 +88,7 @@
   font-style: normal;
   font-display: swap;
   font-weight: 700;
-  src: url(./assets/fonts/futura/Futura-Bold.otf) format('otf')
+  src: url(./assets/fonts/futura/Futura-Bold.otf) format('otf');
 }
 
 @font-face {
@@ -96,7 +96,7 @@
   font-style: normal;
   font-display: swap;
   font-weight: 900;
-  src: url(./assets/fonts/futura/Futura-Black.ttf) format('ttf')
+  src: url(./assets/fonts/futura/Futura-Black.ttf) format('ttf');
 }
 
 @import "tailwindcss";
@@ -114,7 +114,7 @@
   --color-putih: #FFFAFA;
   --color-abu: #A7A7A7;
 
-  --tracking-goodscleaning: -0.6em
+  --tracking-goodscleaning: -0.6em;
   /* Custom tight 2 */
   --tracking-tight-2: -0.575em;
   --tracking-tight-3: -0.6em;
@@ -221,11 +221,11 @@
 
 @plugin "daisyui";
 @plugin "@tailwindcss/typography";
-@import "@fontsource/roboto"
-@import "@fontsource/roboto/700.css"
-@import "@fontsource/roboto/700-italic.css"
+@import "@fontsource/roboto";
+@import "@fontsource/roboto/700.css";
+@import "@fontsource/roboto/700-italic.css";
 
-@import "@fontsource/poppins"
-@import "@fontsource/poppins/700.css"
-@import "@fontsource/poppins/900.css"
+@import "@fontsource/poppins";
+@import "@fontsource/poppins/700.css";
+@import "@fontsource/poppins/900.css";
 

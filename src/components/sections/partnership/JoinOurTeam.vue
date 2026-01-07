@@ -11,7 +11,11 @@ const props = defineProps({
     <section>
         <div class="grid" :class="[props.app.isDesktopDevice ? 'grid-cols-2 gap-16 px-16' : 'px-3 gap-6']">
             <div :class="[props.app.isDesktopDevice?'':'order-2']">
-                <div class=" h-126 bg-gray-200 max-h-126 rounded-3xl"></div>
+                <div 
+                    class="w-full bg-gray-200 max-h-[651px] rounded-3xl"
+                    :class="[props.app.isDesktopDevice?'aspect-4/5':'aspect-square']"
+                >
+                </div>
             </div>
             <div class="content-center"
                 :class="[props.app.isDesktopDevice?'':'order-1']"

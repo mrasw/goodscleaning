@@ -15,14 +15,16 @@ console.log('oi')
         <div class="grid" :class="[props.app.isDesktopDevice?' gap-40':'gap-20']">
             <div class="grid " :class="[props.app.isDesktopDevice ? 'grid-cols-2 gap-16 px-16' : 'px-3 gap-6']">
                 <div class="flex flex-col "
-                    :class="[props.app.isDesktopDevice ? ' h-[584px] gap-4' : 'h-[355px] gap-3 order-2']"
+                    :class="[props.app.isDesktopDevice ? ' h-fit gap-4' : 'h-fit gap-3 order-2']"
                 >
                     <!-- Top component dengan width 100% -->
-                    <div class="bg-gray-200 grow w-full"
+                    <div class="bg-gray-200 grow w-full aspect-5/4"
                         :class="[props.app.isDesktopDevice ? ' rounded-3xl' : ' rounded-2xl']"></div>
 
                     <!-- Bottom container dengan width sama -->
-                    <div class="flex gap-4 w-full">
+                    <div class="flex w-full"
+                        :class="[props.app.isDesktopDevice?'gap-4':'gap-3']"
+                    >
                         <div class="flex-1 aspect-square bg-gray-200 "
                             :class="[props.isDesktopDevice ? 'rounded-3xl' : 'rounded-2xl']"></div>
                         <div class="flex-1 aspect-square bg-gray-200 "

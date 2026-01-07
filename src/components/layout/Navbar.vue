@@ -37,7 +37,7 @@ const navbarItems = ref([
         },
     ])
 
-console.log(navbarItems)
+// console.log(navbarItems)
 </script>
 
 <style>

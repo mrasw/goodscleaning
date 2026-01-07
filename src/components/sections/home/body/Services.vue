@@ -109,12 +109,12 @@ const services = ref([
                     <span class="text-5xl font-poppins-600 text-hijau-text" v-if="props.app.isDesktopDevice">
                         Hasil Pencucian Kami
                     </span>
-                    <span class="text-[32px] font-poppins-600 text-hijau-text" v-else-if="props.app.isMobileDevice">
-                        See the Difference
+                    <span class="text-[28px] font-poppins-600 text-hijau-text" v-else-if="props.app.isMobileDevice">
+                        Hasil Pencucian Kami
                     </span>
                 </div>
-                <div class="grid gap-6 "
-                    :class="[props.app.isDesktopDevice ? 'grid-cols-[repeat(auto-fit,minmax(475px,1fr))] mt-15' : 'mt-6']">
+                <div class="grid "
+                    :class="[props.app.isDesktopDevice ? 'grid-cols-[repeat(auto-fit,minmax(475px,1fr))] mt-15 gap-6 ' : 'mt-6 gap-4']">
                     <div class="max-w-3xl mx-auto">
                         <div>
                             <figure class="diff aspect-3/2 rounded-3xl" tabindex="0">
@@ -127,7 +127,9 @@ const services = ref([
                                 <div class="diff-resizer"></div>
                             </figure>
                         </div>
-                        <div class="flex justify-between  mt-4 gap-6">
+                        <div class="flex justify-between  mt-4 "
+                            :class="[props.app.isDesktopDevice?'gap-6':'gap-4']"
+                        >
                             <div class="max-w-[339px] flex items-end">
                                 <figure class="hover-gallery rounded-3xl">
                                     <img :src="[casualb1]" />

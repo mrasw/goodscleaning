@@ -63,7 +63,9 @@ const features = ref([
                     </div>
 
                     <div class="mt-6 md:mt-10">
-                        <h2 class="text-3xl md:text-4xl lg:text-5xl font-poppins-600 text-hijau-text">
+                        <h2 class=" font-poppins-600 text-hijau-text"
+                            :class="[props.app.isDesktopDevice?'text-3xl md:text-4xl lg:text-5xl':'text-[28px]']"
+                        >
                             Mengapa Goods Cleaning menjadi pilihan
                         </h2>
 

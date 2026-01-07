@@ -7,7 +7,7 @@ const props = defineProps({
     app: Object,
 })
 
-console.log(props.app.isDesktopDevice)
+// console.log(props.app.isDesktopDevice)
 
 const location = ref([
     {

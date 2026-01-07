@@ -13,7 +13,7 @@ import { ref, watch, computed,watchEffect } from 'vue';
 import { useRoute } from 'vue-router';
 
 const route = useRoute()
-watchEffect(() => console.log(route, route.path))
+// watchEffect(() => console.log(route, route.path))
 
 </script>
 

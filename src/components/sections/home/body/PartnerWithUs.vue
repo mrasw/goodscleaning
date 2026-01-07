@@ -27,7 +27,7 @@ const props = defineProps({
                         <div class="grid gap-8">
                             <div>
                                 <span class="font-poppins-600 text-hijau-text"
-                                :class="[props.app.isDesktopDevice?'text-5xl':'text-3xl']"
+                                :class="[props.app.isDesktopDevice?'text-5xl':'text-[28px]']"
                                 >
                                     Bermitra Bersama Goods Cleaning
                                 </span>

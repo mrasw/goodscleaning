@@ -32,7 +32,7 @@ const props = defineProps({
                     :class="[props.app.isDesktopDevice?'mt-10 space-y-8':'mt-6 space-y-6']"
                     >
                         <h2 class=" font-poppins-600 text-hijau-text leading-tight"
-                        :class="[props.app.isDesktopDevice?'text-5xl':'text-[32px]']"
+                        :class="[props.app.isDesktopDevice?'text-5xl':'text-[28px]']"
                         >
                             Bawa Kebersihan Sepatu Anda ke Level Baru
                         </h2>

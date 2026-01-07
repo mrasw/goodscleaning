@@ -16,7 +16,7 @@
 
   
   const route = useRoute()
-  watchEffect(() => console.log(route, route.path))
+  // watchEffect(() => console.log(route, route.path))
 </script>
 
 <template>

@@ -15,7 +15,7 @@ const server = import.meta.env.VITE_BACKEND_SERVER
 // Function untuk compute items per slide
 const computeItemsPerSlide = () => {
     const width = containerRef.value?.clientWidth || window.innerWidth;
-    console.log(' Compute width:', width, 'container width:', containerRef.value?.clientWidth);
+    // console.log(' Compute width:', width, 'container width:', containerRef.value?.clientWidth);
 
     if (width >= 1024) {
         itemsPerSlide.value = 4;   // Desktop
@@ -27,7 +27,7 @@ const computeItemsPerSlide = () => {
         itemsPerSlide.value = 1; // Small phone
     }
 
-    console.log(' Items per slide:', itemsPerSlide.value);
+    // console.log(' Items per slide:', itemsPerSlide.value);
 };
 
 // Function untuk chunk array
@@ -40,13 +40,13 @@ const chunk = (arr, size) => {
 
 // Computed untuk slides
 const slides = computed(() => {
-    console.log(' Computing slides...', {
-        reviewsCount: reviews.value?.length || 0,
-        itemsPerSlide: itemsPerSlide.value
-    });
+    // console.log(' Computing slides...', {
+    //     reviewsCount: reviews.value?.length || 0,
+    //     itemsPerSlide: itemsPerSlide.value
+    // });
 
     const result = chunk(reviews.value, itemsPerSlide.value);
-    console.log(' Slides result:', result.length, 'slides');
+    // console.log(' Slides result:', result.length, 'slides');
     return result;
 });
 
@@ -66,14 +66,14 @@ const onScroll = (e) => {
 
 // Load reviews dan setup
 onMounted(async () => {
-    console.log(' Component mounted');
+    // console.log(' Component mounted');
 
     // Load reviews
     await loadReviews();
-    console.log(' Reviews loaded:', reviews?.value);
-    console.log(' Reviews loaded:', reviews.value?.length || 0);
-    console.log(' Name loaded:', reviews.value[0]?.authorAttribution?.displayName || 0);
-    console.log(' Photo loaded:', reviews.value[0]?.authorAttribution?.photoUri || 0);
+    // console.log(' Reviews loaded:', reviews?.value);
+    // console.log(' Reviews loaded:', reviews.value?.length || 0);
+    // console.log(' Name loaded:', reviews.value[0]?.authorAttribution?.displayName || 0);
+    // console.log(' Photo loaded:', reviews.value[0]?.authorAttribution?.photoUri || 0);
 
     // Tunggu DOM render
     await nextTick();
@@ -85,11 +85,11 @@ onMounted(async () => {
     window.addEventListener("resize", computeItemsPerSlide);
 
     // Debug info
-    console.log(' Final state:', {
-        containerWidth: containerRef.value?.clientWidth,
-        itemsPerSlide: itemsPerSlide.value,
-        slidesCount: slides.value.length
-    });
+    // console.log(' Final state:', {
+    //     containerWidth: containerRef.value?.clientWidth,
+    //     itemsPerSlide: itemsPerSlide.value,
+    //     slidesCount: slides.value.length
+    // });
 });
 
 onUnmounted(() => {
@@ -99,7 +99,7 @@ onUnmounted(() => {
 // Watch untuk reviews changes
 watch(reviews, (newReviews) => {
     if (newReviews && newReviews.length > 0) {
-        console.log(' Reviews updated, recomputing...');
+        // console.log(' Reviews updated, recomputing...');
         nextTick(() => {
             computeItemsPerSlide();
         });
@@ -124,7 +124,7 @@ watch(() => props.app.width, () => {
                 </span>
             </div>
             <div class="mt-10 text-center">
-                <span class="font-poppins-600 text-hijau-text" :class="[app.isDesktopDevice ? 'text-5xl' : 'text-3xl']">
+                <span class="font-poppins-600 text-hijau-text" :class="[app.isDesktopDevice ? 'text-5xl' : 'text-[28px]']">
                     Apa Kata Mereka
                 </span>
             </div>

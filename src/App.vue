@@ -5,7 +5,9 @@
 
   import Footer from './components/layout/Footer.vue';
   
-  import { useAppStore } from '../srcEx/stores/app';
+  // import { useAppStore } from '../srcEx/stores/app';
+  
+  import { useAppStore } from './stores/app';
 
   const app = useAppStore();
 

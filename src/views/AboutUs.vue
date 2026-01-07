@@ -5,7 +5,8 @@
     import Footer from '../components/layout/Footer.vue';
     import Testimonials from '../components/layout/Testimonials.vue';
 
-    import { useAppStore } from '../../srcEx/stores/app';
+    // import { useAppStore } from '../../srcEx/stores/app';
+    import { useAppStore } from '../stores/app';
     import { ref, computed, onMounted,  } from 'vue';
 
     const app = useAppStore()

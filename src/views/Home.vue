@@ -4,7 +4,9 @@ import Hero from '../components/sections/home/Hero.vue';
 import Marquee from '../components/sections/home/Marquee.vue';
 import Body from '../components/sections/home/Body.vue';
 
-import { useAppStore } from '../../srcEx/stores/app';
+// import { useAppStore } from '../../srcEx/stores/app';
+
+import { useAppStore } from '../stores/app';
 
 const app = useAppStore();
 import { ref, watch, computed,watchEffect } from 'vue';

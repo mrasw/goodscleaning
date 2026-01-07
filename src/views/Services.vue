@@ -5,7 +5,8 @@
     import OtherServices from '../components/sections/services/OtherServices.vue';
     import BottomHero from '../components/sections/services/BottomHero.vue';
 
-    import { useAppStore } from '../../srcEx/stores/app';
+    // import { useAppStore } from '../../srcEx/stores/app';
+    import { useAppStore } from '../stores/app';
     import { ref, computed, onMounted,  } from 'vue';
 
     const app = useAppStore()

@@ -1,7 +1,9 @@
 <script setup>
 import GoodsCleanig from '../../assets/images/GoodsCleaning.svg'
 
-import { useAppStore } from '../../../srcEx/stores/app';
+// import { useAppStore } from '../../../srcEx/stores/app';
+
+import { useAppStore } from '../../stores/app';
 
 import { ref } from 'vue';
 import { Icon } from "@iconify/vue";

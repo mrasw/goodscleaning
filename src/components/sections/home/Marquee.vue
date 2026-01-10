@@ -20,11 +20,11 @@
                 class="flex items-center"
                 :class="[props.app.isDesktopDevice?'text-xl':'text-xs']"
             >
-                <span v-if="index == 0" class="mx-4 text-3xl text-kuning-3">•</span>
-                <span class="font-poppins font-bold">
+                <span v-if="index == 0" class="mx-4  text-kuning-3">•</span>
+                <span class="font-poppins font-bold md:text-3xl sm:text-xl text-xs">
                     {{ tag }}
                 </span>
-                <span v-if="index < tagLines.length - 1" class="mx-4 text-3xl text-kuning-3">•</span>
+                <span v-if="index < tagLines.length - 1" class="mx-4 md:text-3xl sm:text-xl text-xs text-kuning-3">•</span>
             </span>
         </Vue3Marquee>
     </section>

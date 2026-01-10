@@ -13,7 +13,7 @@ const props = defineProps({
     <section >
         <!-- <section> -->
         <div 
-            :class="[props.app.isDesktopDevice?'px-13':'px-3']"
+            :class="[props.app.isDesktopDevice?'md:px-13 sm:px-6 px-5':'px-3']"
         >
             <div class="grid lg:grid-cols-2 items-center"
             :class="[props.app.isDesktopDevice?' gap-12':'gap-8']"
@@ -23,28 +23,28 @@ const props = defineProps({
                 <div>
                     <div>
                         <span
-                            class="font-poppins text-base text-hijau-text underline underline-offset-8 decoration-hijau-decoration">
+                            class="font-poppins text-base md:text-lg text-hijau-text underline underline-offset-8 decoration-hijau-decoration">
                             TENTANG KAMI
                         </span>
                     </div>
 
                     <div class=" "
-                    :class="[props.app.isDesktopDevice?'mt-10 space-y-8':'mt-6 space-y-6']"
+                    :class="[props.app.isDesktopDevice?'md:mt-10 sm:mt-5 mt-3 md:space-y-8 space-y-5':'mt-6 space-y-6']"
                     >
                         <h2 class=" font-poppins-600 text-hijau-text leading-tight"
-                        :class="[props.app.isDesktopDevice?'text-5xl':'text-[28px]']"
+                        :class="[props.app.isDesktopDevice?'md:text-5xl sm:text-2xl text-xl':'text-[28px]']"
                         >
                             Bawa Kebersihan Sepatu Anda ke Level Baru
                         </h2>
 
-                        <div class="space-y-7">
-                            <p class="text-base font-poppins-300 text-hijau-text">
+                        <div class="md:space-y-7 space-y-4">
+                            <p class="md:text-base text-sm font-poppins-300 text-hijau-text">
                                 Goods Cleaning hadir sebagai layanan perawatan sepatu profesional yang mengutamakan kualitas, kecepatan, dan kenyamanan.
                             </p>
-                            <p class="text-base font-poppins-300 text-hijau-text">
+                            <p class="md:text-base text-sm font-poppins-300 text-hijau-text">
                                 Dengan teknologi steam cleaning, durasi cepat, dan layanan antar jemput, kami menghadirkan pengalaman shoe care modern yang praktis untuk upgrade pencucian sepatu Anda.
                             </p>
-                            <p class="text-base font-poppins-300 text-hijau-text">
+                            <p class="md:text-base text-sm font-poppins-300 text-hijau-text">
                                 Kami berkomitmen menghadirkan sepatu Anda kembali dalam kondisi terbaik lebih bersih, dan siap mendukung setiap langkah Anda.
                             </p>
                         </div>
@@ -53,8 +53,8 @@ const props = defineProps({
                     <!-- class="btn text-kuning bg-hijau-text dark:bg-kuning dark:text-hijau-text border-none shadow-none font-poppins font-bold" -->
                     <a
                         href="/aboutus"
-                        class="btn dark:text-kuning dark:bg-hijau-text bg-kuning text-hijau-text border-none shadow-none font-poppins font-bold"
-                        :class="[props.app.isDesktopDevice?'mt-10':'mt-6 btn-sm']"
+                        class="btn  dark:text-kuning dark:bg-hijau-text bg-kuning text-hijau-text border-none shadow-none font-poppins font-bold"
+                        :class="[props.app.isDesktopDevice?'mt-10 md:btn-md sm:btn-sm btn-xs':'mt-6 btn-sm']"
                     >
                         Selengkapnya
                     </a>

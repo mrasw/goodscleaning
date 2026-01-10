@@ -1,10 +1,16 @@
 <script setup>
-    import sec1_1 from '../../..//assets/images/sec1.1.jpeg'
-    import sec1_2 from '../../..//assets/images/sec1.2.jpeg'
-    import sec1_3 from '../../..//assets/images/sec1.3.jpeg'
-    import sec1_4 from '../../..//assets/images/sec1.4.jpeg'
-    import sec1_5 from '../../..//assets/images/sec1.5.jpeg'
-    import sec1_6 from '../../..//assets/images/sec1.6.jpeg'
+    // import sec1_1 from '../../..//assets/images/sec1.1.jpeg'
+    // import sec1_2 from '../../..//assets/images/sec1.2.jpeg'
+    // import sec1_3 from '../../..//assets/images/sec1.3.jpeg'
+    // import sec1_4 from '../../..//assets/images/sec1.4.jpeg'
+    // import sec1_5 from '../../..//assets/images/sec1.5.jpeg'
+    // import sec1_6 from '../../..//assets/images/sec1.6.jpeg'
+    import sec1_1 from '../../..//assets/images/hero/sec1.1.webp'
+    import sec1_2 from '../../..//assets/images/hero/sec1.2.webp'
+    import sec1_3 from '../../..//assets/images/hero/sec1.3.webp'
+    import sec1_4 from '../../..//assets/images/hero/sec1.4.webp'
+    import sec1_5 from '../../..//assets/images/hero/sec1.5.webp'
+    import sec1_6 from '../../..//assets/images/hero/sec1.6.webp'
 
     import { Swiper, SwiperSlide } from 'swiper/vue';
     import { Navigation, Pagination, A11y, Autoplay } from 'swiper/modules';
@@ -64,7 +70,7 @@
         <!-- section 1 desktop -->
         <section v-if="props.app.isDesktopDevice">
             <div 
-                class=" mt-3 h-120 bg-putih dark:bg-gradient-hijau rounded-md relative"
+                class=" mt-3 h-full bg-putih dark:bg-gradient-hijau rounded-md relative"
             >
 
                 <div class="grid grid-rows-9">
@@ -74,7 +80,7 @@
                             <div class="overflow-hidden">
                                 <!--line negative margin -->
                                 <div
-                                    class="text-9xl not-dark:text-gradient-hijau-100 dark:text-kuning-3 dark:text-shadow-3d-left font-poppins-900 tracking-tighter my-3 mx-3"
+                                    class="text-6xl sm:text-8xl md:text-9xl not-dark:text-gradient-hijau-100 dark:text-kuning-3 dark:text-shadow-3d-left font-poppins-900 tracking-tighter my-3 mx-3"
                                 >
                                     <div>
                                         <div class="block leading-[0.8]">GOODS</div>
@@ -86,7 +92,7 @@
                             <!-- hashtag -->
                             <div class="text-end dark:text-center">
                                 <span 
-                                    class="text-kuning-2 text-xl block font-poppins-700"
+                                    class="text-kuning-2 text-xs md:text-xl sm:text-base block font-poppins-700"
                                 >
                                     #CuciCepatTetapHemat
                                 </span>
@@ -115,9 +121,10 @@
                                 <a href="https://www.google.com/maps/place/Goods+Cleaning/@-6.4889342,106.7948356,17z/data=!3m1!4b1!4m6!3m5!1s0x2e69c35e46e1bbd3:0xf5471f2cec4db3ec!8m2!3d-6.4889342!4d106.7974159!16s%2Fg%2F11w1xz35t6?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoASAFQAw%3D%3D"
                                     target="_blank"
                                     class="btn text-kuning bg-hijau-text dark:bg-kuning dark:text-hijau-text border-none shadow-none  font-poppins font-bold"
+                                    :class="[props.app.isDesktopDevice?'sm:btn-sm md:btn-md btn-xs':'']"
                                 >
                                     
-                                    <Icon icon="mdi:location" width="24" height="24" class="not-dark:text-kuning-2 dark:text-hijau-text shrink-0" />
+                                    <Icon icon="mdi:location" class="not-dark:text-kuning-2 sm:size-7 size-5 dark:text-hijau-text shrink-0" />
                                     Temukan Kami
                                 </a>
                             </div>

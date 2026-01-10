@@ -12,16 +12,16 @@ const props = defineProps({
     <!-- footer -->
     <section>
         <footer class="footer sm:footer-horizontal bg-hijau-text rounded-b-md text-white"
-            :class="[props.app.isDesktopDevice ? 'px-16 py-21' : 'px-3 py-4']">
-            <div class="" :class="[props.app.isDesktopDevice ? 'flex flex-row ' : 'grid']">
+            :class="[props.app.isDesktopDevice ? 'md:px-16 sm:px-8 px-5 md:py-21 sm:py-10 py-7' : 'px-3 py-4']">
+            <div class="" :class="[props.app.isDesktopDevice ? 'sm:flex sm:flex-row ' : 'grid']">
                 <div class="basis-4/12">
                     <aside>
-                        <div :class="[props.app.isDesktopDevice ? 'space-y-6' : 'space-y-4']">
-                            <div>
-                                <img :src="[GoodsCleanig]" :class="[props.app.isDesktopDevice ? 'w-52' : 'w-18']" alt="">
+                        <div :class="[props.app.isDesktopDevice ? 'space-y-4 md:space-y-6' : 'space-y-4']">
+                            <div :class="[props.app.isDesktopDevice?'':'']">
+                                <img :src="[GoodsCleanig]" :class="[props.app.isDesktopDevice ? 'md:w-40 sm:w-26 w-20' : 'w-18']" alt="">
                             </div>
                             <div>
-                                <p>
+                                <p class="md:text-sm text-xs">
                                     Kami adalah tim profesional yang berpengalaman dalam perawatan sepatu. Dengan standar kerja tinggi dan perhatian pada setiap detail, kami memastikan setiap pasang sepatu ditangani dengan metode terbaik. Berbekal pengalaman bertahun-tahun, kami terus menyempurnakan proses pencucian agar hasil yang diberikan selalu maksimal bersih, rapi, dan layak dipercaya.
                                 </p>
                             </div>
@@ -40,10 +40,11 @@ const props = defineProps({
                         </div>
                     </aside>
                 </div>
-                <div class="basis-1/12">
 
+                <div class="basis-1/12">
                 </div>
-                <div class="basis-7/12" :class="[props.app.isDesktopDevice ? 'grid grid-flow-col lg:gap-14 md:gap-4' : 'grid gap-8']">
+
+                <div class="basis-7/12" :class="[props.app.isDesktopDevice ? 'grid lg:grid-flow-col md:gap-14 sm:gap-4 gap-3' : 'grid gap-8']">
                     <div :class="[props.app.isDesktopDevice?'grid grid-cols-2':'grid grid-cols-2']">
                         <div class="">
                             <nav class="space-y-2">

@@ -19,11 +19,11 @@ const props = defineProps({
 <template>
     <div 
         class="bg-putih mt-3 rounded-md "
-        :class="[props.app.isDesktopDevice?'pt-30':'pt-8']"
+        :class="[props.app.isDesktopDevice?'sm:pt-15 md:pt-30 pt-8':'pt-8']"
     >
 
         <div class="grid"
-        :class="[props.app.isDesktopDevice?'gap-30':'gap-14']"
+        :class="[props.app.isDesktopDevice?'md:gap-30 sm:gap-15 gap-8':'gap-14']"
         >
             <AboutUs :app="props.app" />
 

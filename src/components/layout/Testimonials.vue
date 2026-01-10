@@ -119,12 +119,12 @@ watch(() => props.app.width, () => {
         <div>
             <div class="text-center">
                 <span
-                    class="font-poppins text-base text-hijau-text underline underline-offset-8 decoration-hijau-decoration">
+                    class="font-poppins text-base md:text-lgtext-base md:text-lg text-hijau-text underline underline-offset-8 decoration-hijau-decoration">
                     TESTIMONI
                 </span>
             </div>
-            <div class="mt-10 text-center">
-                <span class="font-poppins-600 text-hijau-text" :class="[app.isDesktopDevice ? 'text-5xl' : 'text-[28px]']">
+            <div class="md:mt-10 sm:mt-5 mt-3 text-center">
+                <span class="font-poppins-600 text-hijau-text" :class="[app.isDesktopDevice ? 'md:text-5xl sm:text-2xl text-xl' : 'text-[28px]']">
                     Apa Kata Mereka
                 </span>
             </div>
@@ -137,14 +137,14 @@ watch(() => props.app.width, () => {
         </div>
 
         <!-- Testimonials Slider -->
-        <div v-else :class="[props.app.isDesktopDevice?'px-17':'px-3']">
+        <div v-else :class="[props.app.isDesktopDevice?'md:px-17 sm:px-8 px-4':'px-3']">
             <!-- Debug Info  -->
             <!-- <div class="text-xs text-gray-500 mb-2">
                 Debug: Items per slide: {{ itemsPerSlide }}, Reviews: {{ reviews.length }}, Slides: {{ slides.length }}
             </div> -->
 
             <div ref="containerRef"
-                class="flex overflow-x-auto snap-x snap-mandatory space-x-6 pt-4 scrollbar-hide scrollbar-hidden"
+                class="flex overflow-x-auto snap-x snap-mandatory space-x-6 scrollbar-hide scrollbar-hidden"
                 @scroll="onScroll">
 
                 <div v-for="(group, slideIndex) in slides" :key="slideIndex" class="snap-center shrink-0 w-full">
@@ -157,13 +157,13 @@ watch(() => props.app.width, () => {
 
                         <div v-for="(review, index) in group" :key="index" class="card px-4 py-6 text-hijau-text">
                             <!-- <p>{{ review.authorAttribution?.photoUri  }}</p> -->
-                            <div class="size-20 rounded-full mb-2 overflow-hidden">
+                            <div class="size-15 md:size-20 rounded-full mb-2 overflow-hidden">
                                 <!-- <img :src="review.authorAttribution?.photoUri || ''"
                                     :alt="review.authorAttribution?.displayName || 'User'" class="w-full h-full object-cover"> -->
                                 <img :src="`http://${server}/api/google-photo?url=${encodeURIComponent(review.authorAttribution.photoUri)}` || ''"
                                     :alt="review.authorAttribution?.displayName || 'User'" class="w-full h-full object-cover">
                             </div>
-                            <h1 class="font-bold">{{ review.authorAttribution?.displayName || 'Anonymous' }}</h1>
+                            <h1 class="font-bold md:text-base text-sm">{{ review.authorAttribution?.displayName || 'Anonymous' }}</h1>
 
                             <!-- Rating Stars -->
                             <div class="rating rating-xs">
@@ -184,7 +184,7 @@ watch(() => props.app.width, () => {
                                     :checked="review.rating === 5" />
                             </div>
 
-                            <p class="text-sm mt-2">{{ review.originalText?.text || review.text?.text || '' }}</p>
+                            <p class="md:text-base text-sm mt-2">{{ review.originalText?.text || review.text?.text || '' }}</p>
                         </div>
                     </div>
                 </div>
@@ -195,7 +195,7 @@ watch(() => props.app.width, () => {
                 <button v-for="(s, i) in slides.length" :key="i" @click="goToSlide(i)"
                     class="rounded-full bg-gray-400 transition-all duration-200" :class="[
                         activeSlide === i ? 'bg-hijau-text scale-125' : 'opacity-40',
-                        app.isDesktopDevice ? 'size-3' : 'size-2'
+                        app.isDesktopDevice ? 'size-2 md:size-3' : 'size-2'
                     ]" :aria-label="`Go to slide ${i + 1}`">
                 </button>
             </div>

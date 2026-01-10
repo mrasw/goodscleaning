@@ -11,32 +11,32 @@ const props = defineProps({
         <!-- partner with us -->
         <section>
             <div class="grid"
-            :class="[props.app.isDesktopDevice?'grid-cols-2 gap-16 px-16':' gap-6 px-3']"
+            :class="[props.app.isDesktopDevice?'lg:grid-cols-2 md:gap-16 sm:gap-10 gap-8  md:px-16 sm:px-8 px-5':' gap-6 px-3']"
             >
                 <div class="content-center">
                     <div 
                         class="grid "
-                        :class="[props.app.isDesktopDevice?'gap-10':'gap-6']"
+                        :class="[props.app.isDesktopDevice?'md:gap-10 sm:gap-7 gap-5':'gap-6']"
                         >
                         <div>
                             <span
-                                class="font-poppins text-base text-hijau-text underline underline-offset-8 decoration-hijau-decoration">
+                                class="font-poppins text-base md:text-lg text-hijau-text underline underline-offset-8 decoration-hijau-decoration">
                             BERMITRA BERSAMA GOODS CLEANING
                             </span>
                         </div>
-                        <div class="grid gap-8">
+                        <div class="grid sm:gap-8 gap-4">
                             <div>
                                 <span class="font-poppins-600 text-hijau-text"
-                                :class="[props.app.isDesktopDevice?'text-5xl':'text-[28px]']"
+                                :class="[props.app.isDesktopDevice?'md:text-5xl sm:text-2xl text-xl':'text-[28px]']"
                                 >
                                     Bermitra Bersama Goods Cleaning
                                 </span>
                             </div>
                             <div class="grid gap-5">
-                                <p class="text-base font-poppins-300 text-hijau-text">
+                                <p class="md:text-base text-sm font-poppins-300 text-hijau-text">
                                     Goods Cleaning membuka peluang bagi Anda untuk bergabung dan menjadi bagian dari ekosistem kami dalam menghadirkan upgrade pencucian sepatu kualitas lebih eksklusif, proses lebih modern, namun tetap hemat bagi pelanggan.
                                 </p>
-                                <p class="text-base font-poppins-300 text-hijau-text">
+                                <p class="md:text-base text-sm font-poppins-300 text-hijau-text">
                                     Didukung sistem yang telah teruji, metode perawatan profesional, serta pelatihan dan dukungan operasional, kami membantu Anda memberikan layanan pencucian sepatu yang bernilai lebih dan dipercaya.
                                 </p>
                             </div>
@@ -45,7 +45,7 @@ const props = defineProps({
                             <a
                                 href="/partnership"
                                 class="btn dark:text-kuning dark:bg-hijau-text bg-kuning text-hijau-text border-none shadow-none font-poppins font-bold"
-                                :class="[props.app.isDesktopDevice?'':'btn-sm']"
+                                :class="[props.app.isDesktopDevice?'md:btn-md sm:btn-sm btn-xs':'btn-sm']"
                             >
                                 Bermitra Goods Cleaing
                             </a>

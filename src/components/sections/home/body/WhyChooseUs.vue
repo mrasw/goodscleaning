@@ -1,4 +1,7 @@
 <script setup>
+import WhyChooseUs01 from "../../../../assets/images/home/whychooseus/WhyChooseUs01.webp"
+import WhyChooseUs02 from "../../../../assets/images/home/whychooseus/WhyChooseUs02.webp"
+
 import { ref, onMounted, computed } from 'vue';
 import { Icon } from "@iconify/vue";
 
@@ -37,7 +40,10 @@ const features = ref([
                     <!-- padding agar area “keluar” floating tetap punya ruang -->
                     <div class="mt-[10%] mr-[10%] relative aspect-3/4 w-3/4">
                         <!-- MAIN IMAGE -->
-                        <div class="absolute inset-0 bg-gray-300 rounded-3xl"></div>
+                        <div class="absolute inset-0 bg-gray-300 rounded-3xl">
+                            
+                            <img :src="WhyChooseUs01" alt="" class="object-cover w-full h-full rounded-3xl" loading="lazy" decoding="async">
+                        </div>
                         <!-- FLOATING IMAGE -->
                         <div class="absolute 
                             -top-[15%]
@@ -47,6 +53,8 @@ const features = ref([
                             bg-gray-200 
                             rounded-2xl 
                             shadow-xl">
+                            
+                            <img :src="WhyChooseUs02" alt="" class="object-cover w-full h-full rounded-3xl" loading="lazy" decoding="async">
                         </div>
                     </div>
                 </div>

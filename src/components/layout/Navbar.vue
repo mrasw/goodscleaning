@@ -89,7 +89,7 @@ watchEffect(()=>{
                     <a class="btn sm:btn-sm md:btn-md  bg-kuning border-none shadow-none text-hijau-text font-poppins font-bold"
                         href="https://wa.me/6285819423066" target="_blank">
                         <Icon icon="ic:baseline-whatsapp" width="24" height="24" :style="{ color: '#02402C' }" />
-                        <span>
+                        <span class="text-xs md:text-md">
                             Hubungi Kami
                         </span>
                     </a>

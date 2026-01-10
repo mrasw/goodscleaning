@@ -5,12 +5,12 @@
     // import sec1_4 from '../../..//assets/images/sec1.4.jpeg'
     // import sec1_5 from '../../..//assets/images/sec1.5.jpeg'
     // import sec1_6 from '../../..//assets/images/sec1.6.jpeg'
-    import sec1_1 from '../../..//assets/images/hero/sec1.1.webp'
-    import sec1_2 from '../../..//assets/images/hero/sec1.2.webp'
-    import sec1_3 from '../../..//assets/images/hero/sec1.3.webp'
-    import sec1_4 from '../../..//assets/images/hero/sec1.4.webp'
-    import sec1_5 from '../../..//assets/images/hero/sec1.5.webp'
-    import sec1_6 from '../../..//assets/images/hero/sec1.6.webp'
+    import sec1_1 from '../../..//assets/images/home/hero/sec1.1.webp'
+    import sec1_2 from '../../..//assets/images/home/hero/sec1.2.webp'
+    import sec1_3 from '../../..//assets/images/home/hero/sec1.3.webp'
+    import sec1_4 from '../../..//assets/images/home/hero/sec1.4.webp'
+    import sec1_5 from '../../..//assets/images/home/hero/sec1.5.webp'
+    import sec1_6 from '../../..//assets/images/home/hero/sec1.6.webp'
 
     import { Swiper, SwiperSlide } from 'swiper/vue';
     import { Navigation, Pagination, A11y, Autoplay } from 'swiper/modules';

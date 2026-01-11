@@ -1,5 +1,5 @@
 <script setup>
-import GoodsCleanig from '../../assets/images/GoodsCleaning.svg'
+import GoodsCleanig from '../../assets/images/GoodsCleaning.webp'
 
 // import { useAppStore } from '../../../srcEx/stores/app';
 
@@ -56,10 +56,10 @@ const navbarItems = ref([
 <template>
     <div class="navbar px-3" v-if="app.isDesktopDevice"
         :class="[(props.path == '/') ? 'dark:bg-linear-to-r dark:from-hijau-0 dark:to-hijau-100 not-dark:bg-hijau-text rounded-md shadow-sm' : 'bg-hijau-text rounded-t-md']">
-        <div class="navbar-start">
+        <div class="navbar-start hidden sm:flex">
             <img :src="param.image" alt="">
         </div>
-        <div class="navbar-center  lg:flex">
+        <div class="navbar-center mx-auto lg:flex">
             <ul class="menu menu-horizontal px-1 font-poppins font-bold text-white">
                 <li v-for="item in navbarItems">
                     <a :href="item.path"

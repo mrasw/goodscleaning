@@ -1,5 +1,5 @@
 <script setup>
-import GoodsCleanig from '../../assets/images/GoodsCleaning.svg'
+import GoodsCleanig from '../../assets/images/GoodsCleaning.webp'
 import { ref } from "vue";
 import { Icon } from "@iconify/vue";
 const props = defineProps({

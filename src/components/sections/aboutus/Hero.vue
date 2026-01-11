@@ -1,5 +1,5 @@
 <script setup>
-import hero1 from '../../../assets/images/aboutushero1.jpeg'
+// import hero1 from '../../../assets/images/aboutushero1.jpeg'
 import AboutUs01 from '../../../assets/images/aboutus/AboutUs01.webp'
 
 import { ref, onMounted, computed } from 'vue';
@@ -14,7 +14,10 @@ const props = defineProps({
         return {
             hero1: {
                 objectPosition: `50% ${70 + (props.app.width * 0.008)}%`
-            }
+            },
+            AboutUs01: {
+                objectPosition: `50% ${70 + (props.app.width * 0.008)}%`
+            },
         }
     })
 </script>
@@ -38,7 +41,7 @@ const props = defineProps({
                     <div class="w-8/9 mx-auto text-base font-poppins" v-if="props.app.isMobileDevice">Tim kami berdedikasi untuk memberikan sepatu yang bersih, terawat, dan nyaman dipakai, dengan menggunakan produk terbaik serta teknik pembersihan yang teruji.</div>
                 </div>
                 <div>
-                    <img :src="AboutUs01" class="object-cover h-120 w-full rounded-3xl" :style="imageStyle.hero1" alt="">
+                    <img :src="AboutUs01" class="object-cover h-120 w-full rounded-3xl" :style="imageStyle.AboutUs01" alt="">
                 </div>
             </div>
         </div>

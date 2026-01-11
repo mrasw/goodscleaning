@@ -41,10 +41,10 @@ const navbarItems = ref([
 
 // console.log(navbarItems)
 
-watchEffect(()=>{
-    console.log(navbarEnd)
-    console.log(navbarEnd.value)
-})
+// watchEffect(()=>{
+//     console.log(navbarEnd)
+//     console.log(navbarEnd.value)
+// })
 
 </script>
 

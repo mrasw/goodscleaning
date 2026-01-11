@@ -1,5 +1,6 @@
 <script setup>
 import hero1 from '../../../assets/images/aboutushero1.jpeg'
+import AboutUs01 from '../../../assets/images/aboutus/AboutUs01.webp'
 
 import { ref, onMounted, computed } from 'vue';
 
@@ -25,19 +26,19 @@ const props = defineProps({
                 bg-[linear-gradient(to_bottom,#02402C,#05A672)]
                 bg-size-[100%_528px]
                 bg-no-repeat"
-            :class="[props.app.isDesktopDevice?'px-28 pt-13':'px-3 pt-8']"
+            :class="[props.app.isDesktopDevice?'md:px-28 px-15 pt-13':'px-3 pt-8']"
         >
             <div class="text-white" :class="[props.app.isDesktopDevice?'space-y-14':'space-y-8']">
                 <div class="text-center"
                 :class="[props.app.isDesktopDevice?'space-y-8':'space-y-3']"
                 >
-                    <div class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl w-2/3 mx-auto font-poppins-700" v-if="props.app.isDesktopDevice">Bawa Kebersihan Sepatu Anda ke Level Baru</div>
-                    <div class="w-3/4 md:text-md text-sm  mx-auto font-poppins" v-if="props.app.isDesktopDevice">Tim kami berdedikasi untuk memberikan sepatu yang bersih, terawat, dan nyaman dipakai, dengan menggunakan produk terbaik serta teknik pembersihan yang teruji.</div>
+                    <div class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl md:w-2/3 w-5/6 mx-auto font-poppins-700" v-if="props.app.isDesktopDevice">Bawa Kebersihan Sepatu Anda ke Level Baru</div>
+                    <div class="md:w-3/4 w-8/9 md:text-md text-sm  mx-auto font-poppins" v-if="props.app.isDesktopDevice">Tim kami berdedikasi untuk memberikan sepatu yang bersih, terawat, dan nyaman dipakai, dengan menggunakan produk terbaik serta teknik pembersihan yang teruji.</div>
                     <div class="text-2xl w-5/6 mx-auto font-poppins-700" v-if="props.app.isMobileDevice">Bringing Clean, Comfort, and Care Together</div>
                     <div class="w-8/9 mx-auto text-base font-poppins" v-if="props.app.isMobileDevice">Tim kami berdedikasi untuk memberikan sepatu yang bersih, terawat, dan nyaman dipakai, dengan menggunakan produk terbaik serta teknik pembersihan yang teruji.</div>
                 </div>
                 <div>
-                    <img :src="hero1" class="object-cover h-120 w-full rounded-3xl" :style="imageStyle.hero1" alt="">
+                    <img :src="AboutUs01" class="object-cover h-120 w-full rounded-3xl" :style="imageStyle.hero1" alt="">
                 </div>
             </div>
         </div>

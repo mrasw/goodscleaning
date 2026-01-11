@@ -119,7 +119,7 @@ watch(() => props.app.width, () => {
         <div>
             <div class="text-center">
                 <span
-                    class="font-poppins text-base md:text-lgtext-base md:text-lg text-hijau-text underline underline-offset-8 decoration-hijau-decoration">
+                    class="font-poppins text-base md:text-lg text-hijau-text underline underline-offset-8 decoration-hijau-decoration">
                     TESTIMONI
                 </span>
             </div>

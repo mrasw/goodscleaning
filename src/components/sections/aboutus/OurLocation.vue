@@ -30,13 +30,13 @@ const location = ref([
 <template>
     <section>
         <div class="text-hijau-text font-poppins-700"
-        :class="[props.app.isDesktopDevice?' mx-17':'mx-5']"
+        :class="[props.app.isDesktopDevice?' md:px-17 px-8':'px-5']"
         >
             <div class="text-center">
-                <span :class="[props.app.isDesktopDevice?'text-5xl':'text-[28px]']">Lokasi Kami</span>
+                <span :class="[props.app.isDesktopDevice?'md:text-5xl sm:text-2xl text-xl':'text-[28px]']">Lokasi Kami</span>
             </div>
             <div class="grid gap-6 "
-                :class="[props.app.isDesktopDevice ? 'grid-cols-2 mt-10' : 'grid-flow-row mt-6']">
+                :class="[props.app.isDesktopDevice ? 'sm:grid-cols-2 grid-flow-row mt-10' : 'grid-flow-row mt-6']">
                 <div class="card bg-kuning-3 px-6 w-full shadow-sm" v-for="loc in location">
                     <figure :class="[props.app.isDesktopDevice?'pt-10':'pt-6']">
                         <img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"

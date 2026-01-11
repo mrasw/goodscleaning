@@ -16,7 +16,7 @@ export function useHomeData() {
     
     const loadReviews = async () => {
         reviews.value = await fetchGoogleReviews(import.meta.env.VITE_GOOGLE_PLACE_ID)
-        console.log(reviews.value)
+        // console.log(reviews.value)
     }
 
     return { reviews, loadReviews }

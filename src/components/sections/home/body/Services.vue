@@ -78,7 +78,7 @@ const services = ref([
                     <!-- <div class="grid lg:grid-cols-3 lg:grid-flow-row grid-cols-2 grid-flow-row text-hijau-text gap-6" > -->
                     <!-- <div class="grid grid-flow-row text-hijau-text gap-6 mt-10 place-content-center justify-items-center"> -->
                     <div class="grid text-hijau-text gap-6 mt-10 place-content-center justify-items-center"
-                        :class="[props.app.isDesktopDevice ? 'grid-cols-[repeat(auto-fit,minmax(330px,1fr))]' : 'grid-flow-row']">
+                        :class="[props.app.isDesktopDevice ? 'grid-cols-[repeat(auto-fit,minmax(310px,1fr))]' : 'grid-flow-row']">
                         <div class="card w-full px-5 sm:px-0" v-for="service in services">
                             <!-- <figure class="">
                                     <img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"

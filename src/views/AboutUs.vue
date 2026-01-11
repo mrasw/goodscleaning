@@ -13,7 +13,7 @@
 </script>
 
 <template>
-    <div class="w-full grid gap-20 bg-white ">
+    <div class="w-full grid md:gap-20 gap-15 bg-white ">
         <Hero :app="app"/>
         <AboutUs :app="app" />
         <OurLocation :app="app"/>

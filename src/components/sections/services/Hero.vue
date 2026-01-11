@@ -16,14 +16,14 @@ const props = defineProps({
             >
             <div class="text-center">
                 <article class="prose text-white font-poppins-500 mx-auto px-5"
-                :class="[props.app.isDesktopDevice?'text-6xl w-2/3':'text-2xl']"
+                :class="[props.app.isDesktopDevice?'text-3xl sm:text-4xl md:text-5xl lg:text-6xl w-2/3':'text-2xl']"
                 >
                     <span>Layanan Kebersihan Profesional Kami</span>
                 </article>
             </div>
             <div class="text-center">
                 <article class="prose text-white font-poppins mx-auto"
-                :class="[props.app.isDesktopDevice?'text-xl':'text-base']"
+                :class="[props.app.isDesktopDevice?'md:text-md text-sm':'text-base']"
                 >
                     <span>
                         Kami menawarkan berbagai layanan pembersihan profesional yang dirancang khusus untuk memenuhi kebutuhan personal Anda.

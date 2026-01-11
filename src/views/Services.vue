@@ -16,7 +16,7 @@
 
         <Hero :app="app" />
         <div class=" grid" 
-        :class="[app.isDesktopDevice?'px-17 gap-20':'px-5 gap-8']">
+        :class="[app.isDesktopDevice?'sm:px-17 px-5 sm:gap-20 gap-15':'px-5 gap-8']">
             <Services :app="app"/>
             <OtherServices :app="app"/>
             <BottomHero :app="app"/>

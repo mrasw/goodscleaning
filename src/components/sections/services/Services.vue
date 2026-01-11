@@ -54,16 +54,16 @@ const numberWithDots = (x) => {
         <div class="">
             <div class="text-center">
                 <span
-                    class="font-poppins text-base text-hijau-text underline underline-offset-8 decoration-hijau-decoration">
+                    class="font-poppins text-base md:text-lg text-hijau-text underline underline-offset-8 decoration-hijau-decoration">
                     LAYANAN KAMI
                 </span>
             </div>
 
             <div class="grid mt-10 gap-6 text-hijau-text"
-                :class="[props.app.isDesktopDevice ? 'grid-cols-[repeat(auto-fit,minmax(390px,1fr))]' : 'grid-flow-row']">
+                :class="[props.app.isDesktopDevice ? 'grid-cols-[repeat(auto-fit,minmax(310px,1fr))]' : 'grid-flow-row']">
 
                 <div class="card shadow-sm max-w-85 mx-auto" 
-                :class="[props.app.isDesktopDevice?' w-85':'w-full']"
+                :class="[props.app.isDesktopDevice?' w-70 md:w-85':'w-full']"
                 v-for="service in services">
                     <!-- <figure>
                         <img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
@@ -72,22 +72,22 @@ const numberWithDots = (x) => {
                     <div class="bg-gray-300 h-60 rounded-t-2xl"></div>
                     <div class="card-body">
                         <article class="prose ">
-                            <h2 class="card-title text-hijau-text">
+                            <h2 class="card-title text-hijau-text text-base md:text-lg">
                                 <!-- Card Title
                                 <div class="badge badge-secondary">NEW</div> -->
                                 {{ service.nama }}
                             </h2>
                         </article>
-                        <p>
+                        <p class="text-sm md:text-base">
                             <!-- A card component has a figure, a body part, and inside body there are title and actions parts -->
                             {{ service.desc }}
                         </p>
                         <div class="grid card-actions justify-end text-end font-bold">
-                            <div class="flex gap-1 items-center justify-end">
-                                <Icon icon="lsicon:time-one-filled" width="16" height="16" class="text-hijau-text shrink-0"/>
+                            <div class="flex gap-1 items-center justify-end md:text-md text-sm">
+                                <Icon icon="lsicon:time-one-filled" width="16" height="16" class="text-hijau-text shrink-0 "/>
                                 {{service.waktu}} Hari
                             </div>
-                            <div class="text-xl">Rp.{{ numberWithDots(service.harga) }}</div>
+                            <div class="md:text-xl text-lg">Rp.{{ numberWithDots(service.harga) }}</div>
                         </div>
                     </div>
                 </div>

@@ -14,14 +14,14 @@ const props = defineProps({
         ">
             <div class="text-center">
                 <article class="prose text-white font-poppins-500 mx-auto"
-                :class="[props.app.isDesktopDevice?'text-6xl w-3/4':'text-2xl px-2']"
+                :class="[props.app.isDesktopDevice?'text-3xl sm:text-4xl md:text-5xl lg:text-6xl md:w-3/4 w-8/9':'text-2xl px-2']"
                 >
                     <span>Tumbuh Bersama Kami<br>Jadilah Mitra Goods Cleaning</span>
                 </article>
             </div>
             <div class="text-center">
-                <div class=" text-white font-poppins mx-auto w-3/4"
-                :class="[props.app.isDesktopDevice?'text-xl':'text-base']"
+                <div class=" text-white font-poppins mx-auto md:w-3/4 w-5/6"
+                :class="[props.app.isDesktopDevice?'md:text-md text-sm':'text-base']"
                 >
                     <span>
                         Bergabunglah menjadi bagian dari kami sebagai mitra maupun tim profesional dengan sistem kerja yang telah terbukti, pelatihan profesional, dan dukungan penuh, Anda dapat membangun karier atau bisnis yang cepat berkembang, hemat biaya, dan tetap berkualitas.

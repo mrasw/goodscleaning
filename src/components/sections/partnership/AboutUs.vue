@@ -27,25 +27,25 @@ const layanan = ref([
 </script>
 <template>
     <section>
-        <div class="" :class="[props.app.isDesktopDevice?'px-17':'px-5']">
+        <div class="" :class="[props.app.isDesktopDevice?'':'px-5']">
             <div class="flex text-hijau-text"
-                :class="[props.app.isDesktopDevice?'flex-row justify-between':'flex-col space-y-4']"
+                :class="[props.app.isDesktopDevice?'lg:flex-row flex-col justify-between space-y-4 md:space-y-6 lg:space-y-0':'flex-col space-y-4']"
             >
                 
                 <!-- LEFT -->
-                <div class="basis-3/5">
+                <div class="basis-3/5 grid md:gap-10 gap-5">
                     <div>
                         <span
-                            class="font-poppins text-base text-hijau-text underline underline-offset-8 decoration-hijau-decoration">
+                            class="font-poppins text-base md:text-lg text-hijau-text underline underline-offset-8 decoration-hijau-decoration">
                             BERMITRA BERSAMA GOODS CLEANING
                         </span>
                     </div>
 
                     <div class="w-5/6"
-                    :class="[props.app.isDesktopDevice?'mt-10 space-y-8':'mt-6 space-y-6']"
+                    :class="[props.app.isDesktopDevice?' space-y-8':'mt-6 space-y-6']"
                     >
                         <h2 class=" font-poppins-600 text-hijau-text leading-tight "
-                        :class="[props.app.isDesktopDevice?'text-5xl':'text-[32px]']"
+                        :class="[props.app.isDesktopDevice?'md:text-5xl sm:text-2xl text-xl':'text-[32px]']"
                         >
                             <span>
                                 Kembangkan Cabang Goods Cleaning Anda
@@ -54,7 +54,7 @@ const layanan = ref([
                     </div>
                 </div>
                 <div class="basis-2/5">
-                    <span class="space-y-4 w-5/6">
+                    <span class="space-y-4 md:text-base text-sm w-5/6">
                         <p class="font-bold">Jadilah mitra resmi kami dan kembangkan cabang layanan pembersihan sepatu profesional di kota Anda. Dengan sistem kerja yang telah terbukti, pelatihan intensif, dan dukungan penuh, Anda dapat membangun usaha yang efisien, hemat biaya, dan berdaya saing tinggi.</p>
                         <p>— Sebagai mitra, Anda tidak berjalan sendiri, kami menyediakan panduan, strategi pemasaran, serta jaringan brand terpercaya untuk memastikan bisnis Anda tumbuh stabil dan berkelanjutan.</p>
                     </span>

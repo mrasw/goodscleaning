@@ -20,7 +20,7 @@
     <section>
         <Hero :app="app"/>
         <div class="grid bg-putih "
-            :class="[app.isDesktopDevice?'pt-15 pb-20 px-15 gap-40':'py-8 gap-20']"
+            :class="[app.isDesktopDevice?'pt-15 pb-20 lg:px-30 md:px-15 sm:px-10 px-5 lg:gap-30 md:gap-20 gap-15':'py-8 gap-20']"
         >
             <AboutUs :app="app"/>
             <OurTrustedPartner :app="app"/>

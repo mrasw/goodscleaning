@@ -62,8 +62,8 @@ const numberWithDots = (x) => {
             <div class="grid mt-10 gap-6 text-hijau-text"
                 :class="[props.app.isDesktopDevice ? 'grid-cols-[repeat(auto-fit,minmax(310px,1fr))]' : 'grid-flow-row']">
 
-                <div class="card shadow-sm max-w-85 mx-auto" 
-                :class="[props.app.isDesktopDevice?' w-70 md:w-85':'w-full']"
+                <div class="card shadow-sm max-w-80 mx-auto" 
+                :class="[props.app.isDesktopDevice?' w-70 md:w-80':'w-full']"
                 v-for="service in services">
                     <!-- <figure>
                         <img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"

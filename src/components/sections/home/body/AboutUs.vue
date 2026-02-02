@@ -68,9 +68,11 @@
                     <div class="grid grid-flow-row justify-items-end gap-2 md:gap-4 pb-13 w-1/2">
                         <div class="bg-gray-200 w-2/3 aspect-square rounded-3xl">
                             <img :src="AboutUs01" alt="" class="object-cover w-full h-full rounded-3xl" loading="lazy" decoding="async">
+                            <!-- <img :src="AboutUs01" alt="" class="object-cover w-full h-full rounded-3xl" > -->
                         </div>
                         <div class="bg-gray-200 w-full aspect-square rounded-3xl">
                             <img :src="AboutUs03" alt="" class="object-cover w-full h-full rounded-3xl" loading="lazy" decoding="async">
+                            <!-- <img :src="AboutUs03" alt="" class="object-cover w-full h-full rounded-3xl" > -->
                         </div>
                     </div>
                     
@@ -78,9 +80,11 @@
                     <div class="grid grid-flow-row justify-items-start gap-2 md:gap-4 pt-13 w-1/2">
                         <div class="bg-gray-200 w-full aspect-square rounded-3xl">
                             <img :src="Toko" alt="" class="object-cover w-full h-full rounded-3xl" loading="lazy" decoding="async">
+                            <!-- <img :src="Toko" alt="" class="object-cover w-full h-full rounded-3xl" > -->
                         </div>
                         <div class="bg-gray-200 w-2/3 aspect-square rounded-3xl">
                             <img :src="AboutUs02" alt="" class="object-cover w-full h-full rounded-3xl" loading="lazy" decoding="async">
+                            <!-- <img :src="AboutUs02" alt="" class="object-cover w-full h-full rounded-3xl" > -->
                         </div>
                     </div>
                 </div>

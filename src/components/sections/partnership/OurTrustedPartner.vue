@@ -70,8 +70,10 @@ console.log(props.app)
                             <div class="flex gap-4"
                                 :class="[props.app.isDesktopDevice?'':'text-sm']"
                                 >
-                                <Icon icon="mdi:location" class="text-hijau-text shrink-0 sm:size-6 size-5" v-if="props.app.isDesktopDevice"/>
-                                <Icon icon="mdi:location" width="20" height="20" class="text-hijau-text shrink-0" v-if="!(props.app.isDesktopDevice)"/>
+                                <div class="pt-2">
+                                    <Icon icon="mdi:location" class="text-hijau-text shrink-0 sm:size-6 size-5" v-if="props.app.isDesktopDevice"/>
+                                    <Icon icon="mdi:location" width="20" height="20" class="text-hijau-text shrink-0" v-if="!(props.app.isDesktopDevice)"/>
+                                </div>
                                 <p class="text-sm md:text-base">Kp. Kekupu, Jalan Masjid Jl. Al-Barkah No.04, RT 03/RW06, Pasir Putih, Kec. Sawangan,
                                     Kota Depok, Jawa Barat</p>
                             </div>

@@ -105,7 +105,7 @@ const navbarItems = ref([
         >
             <summary class="collapse-title navbar flex">
                 <div class="navbar-start">
-                    <img :src="param.image" alt="">
+                    <img :src="param.image" class="h-8" alt="">
                 </div>
                 <div class="navbar-end">
                     <div class="dropdown dropdown-end" v-if="app.isMobileDevice">

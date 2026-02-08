@@ -77,7 +77,7 @@
                     <div class="row-start-2 row-span-7 place-items-center my-auto">
                         <div class="">
                             <!-- Container dengan overflow hidden -->
-                            <div class="overflow-hidden">
+                            <div class="overflow-hidden w-fit mx-auto">
                                 <!--line negative margin -->
                                 <div
                                     class="text-6xl sm:text-7xl md:text-8xl lg:text-9xl not-dark:text-gradient-hijau-100 dark:text-kuning-3 dark:text-shadow-3d-left font-poppins-900 tracking-tighter my-3 mx-3"

@@ -44,7 +44,7 @@ const props = defineProps({
                 <div class="basis-1/12">
                 </div>
 
-                <div class="basis-7/12" :class="[props.app.isDesktopDevice ? 'grid lg:grid-flow-col md:gap-14 sm:gap-4 gap-3' : 'grid gap-8']">
+                <div class="basis-7/12" :class="[props.app.isDesktopDevice ? 'grid lg:grid-flow-col md:gap-12 sm:gap-4 gap-3' : 'grid gap-8']">
                     <div :class="[props.app.isDesktopDevice?'grid grid-cols-2':'grid grid-cols-2']">
                         <div class="">
                             <nav class="space-y-2">
